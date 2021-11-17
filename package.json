@@ -1,0 +1,23 @@
+{
+  "name": "pdf-template-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/meesalamaharjun/pdf-template-generator.git"
+  },
+  "author": "Maharjun Meesala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meesalamaharjun/pdf-template-generator/issues"
+  },
+  "homepage": "https://github.com/meesalamaharjun/pdf-template-generator#readme",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "puppeteer": "^11.0.0"
+  }
+}

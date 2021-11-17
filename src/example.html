@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://www.chartjs.org/dist/master/chart.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Shippori+Mincho&display=block"
+      rel="stylesheet"
+      rel="preload"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=block"
+      rel="stylesheet"
+      rel="preload"
+      as="style"
+    />
+    <style>
+      @page {
+        size: auto;
+      }
+      .header {
+        display: flex;
+      }
+      .logo {
+        height: 85px;
+        width: 180px;
+      }
+      .logo-container {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .title-container {
+        width: 80%;
+        font-family: "Roboto";
+        font-size: 2em;
+        font-weight: bold;
+      }
+      .student-details {
+        display: flex;
+        margin-top: 20px;
+      }
+      .student-date {
+        font-size: 22px;
+        font-family: "Roboto";
+        font-weight: bold;
+        color: white;
+        background: red;
+        border-radius: 5px;
+        height: 35px;
+        width: 200px;
+        text-align: center;
+        margin-right: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      .student-name {
+        font-family: "Shippori Mincho";
+        font-size: 24px;
+        font-weight: bold;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      .student-grade {
+        font-size: 20px;
+        margin: 20px 0 0 10px;
+        font-family: "Roboto";
+      }
+      .student-marks-header {
+        height: 40px;
+        width: 240px;
+        background: grey;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin: 100px 0 0 50px;
+        position: absolute;
+        top: 5.5em;
+        left: 4em;
+        opacity: 0.8;
+        color: white;
+        font-family: "Roboto";
+        font-weight: bold;
+      }
+      .student-marks-detials {
+        width: 600px;
+        background-color: palegoldenrod;
+      }
+      .student-marks {
+        margin-top: 3em;
+      }
+      .empty-div {
+        height: 30px;
+      }
+      .student-marks-table-header {
+        display: flex;
+      }
+      .student-marks-header-cell {
+        width: 150px;
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 10px;
+        height: 35px;
+      }
+      .first {
+        margin-left: 20px;
+      }
+      .last {
+        margin-right: 20px;
+      }
+      .table-cell-border {
+        border-top: 0.5px solid;
+      }
+      #myChart {
+        border: 1px solid black;
+      }
+      .canvas-container {
+        height: 250px;
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title-container">{{exam_name}}</div>
+      <div class="logo-container">
+        <img
+          class="logo"
+          alt="logo"
+          src="https://logos-world.net/wp-content/uploads/2021/08/Byjus-Symbol.png"
+        />
+      </div>
+    </div>
+    <div class="student-details">
+      <div class="student-date">{{dateFormat date format}}</div>
+      <div class="student-name">{{name}}</div>
+    </div>
+    <div class="student-grade">{{grade}} | PCB</div>
+    <div class="student-marks">
+      <div class="student-marks-header">Marks Scorecard</div>
+      <div class="student-marks-detials">
+        <div class="empty-div"></div>
+        <div class="student-marks-table-header">
+          <div class="student-marks-header-cell first">Subject</div>
+          <div class="student-marks-header-cell">Marks Obtained</div>
+          <div class="student-marks-header-cell">Total Marks</div>
+          <div class="student-marks-header-cell last">Percentage</div>
+        </div>
+        {{#each marks}}
+        <div class="student-marks-table-header table-cell-border">
+          <div class="student-marks-header-cell first">{{this.subject}}</div>
+          <div class="student-marks-header-cell">{{this.marks}}</div>
+          <div class="student-marks-header-cell">{{this.total_marks}}</div>
+          <div class="student-marks-header-cell last">{{this.percentage}}</div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    <div class="canvas-container">
+      <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+    <script>
+      const ctx = document.getElementById("myChart").getContext("2d");
+      const config = {
+        type: "bar",
+        data: {
+          labels: ["Maths"],
+          datasets: [
+            {
+              label: "Top",
+              type: "bar",
+              borderColor: "rgba(255,240,181,0)",
+              backgroundColor: "#fff0b5",
+              data: [{{subjects.mathematics.top_score_percentage}}],
+              fill: false,
+            },
+            {
+              label: "You",
+              type: "bar",
+              backgroundColor: "#08a6a8",
+              data: [{{subjects.mathematics.score}}],
+            },
+            {
+              label: "Avg",
+              type: "bar",
+              backgroundColor: "rgba(0,0,0,0.1)",
+              backgroundColorHover: "#ffc2ad",
+              data: [{{subjects.mathematics.average_score_percentage}}],
+            },
+          ],
+        },
+        options: {
+          indexAxis: "y",
+          title: {
+            display: true,
+            text: "Population growth (millions): Europe & Africa",
+          },
+          legend: { display: false },
+        },
+      };
+      const myChart = new Chart(ctx, config);
+    </script>
+  </body>
+</html>
