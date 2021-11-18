@@ -118,8 +118,9 @@
         border: 1px solid black;
       }
       .canvas-container {
-        height: 250px;
-        width: 600px;
+        height: 125px;
+        width: 400px;
+        margin-top: 100px;
       }
     </style>
   </head>
@@ -199,6 +200,15 @@
             text: "Population growth (millions): Europe & Africa",
           },
           legend: { display: false },
+          scales: {
+            x: {
+              max: 100,
+              min: 0,
+              ticks: {
+                stepSize: 100,
+              },
+            },
+          },
         },
       };
       const myChart = new Chart(ctx, config);
