@@ -338,10 +338,6 @@
       left: 25px;
     }
 
-    .right-content {
-      /* margin-left: 35px; */
-    }
-
     .down-report {
       margin-top: 10px;
     }
@@ -439,6 +435,82 @@
     .page-header {
       display: flex;
       justify-content: flex-end;
+    }
+
+    .section-circle{
+      margin-bottom: 300px;
+    }
+
+    .circle-1 {
+    height: 160px;
+    width: 160px;
+    background-color: #FFDAFE;
+    border-radius: 50%;
+    margin: -10px 40px 20px 300px;
+    display: inline-block;
+    position: absolute;
+    }
+
+    .circle-2 {
+    height: 160px;
+    width: 160px;
+    background-color: #98AFC7;
+    border-radius: 50%;
+    margin: 105px 40px 20px 200px;
+    display: inline-block;
+    position: absolute;
+    }
+
+    .circle-3 {
+    height: 160px;
+    width: 160px;
+    background-color: #81D8D0;
+    border-radius: 50%;
+    margin: 105px 40px 20px 400px;
+    display: inline-block;
+    position: absolute;
+    }
+
+    .circle-4 {
+    height: 160px;
+    width: 160px;
+    background-color: #98AFC7;
+    border-radius: 50%;
+    margin: -10px 40px 20px 500px;
+    display: inline-block;
+    position: absolute;
+    }
+
+    .inner-1 {
+    font-size: 22px;
+    font-family: 'DejaVuSans';
+    position: absolute;
+    top: 40%;
+    left: 30px;
+    text-align: center;
+    line-height: 0px;
+    }
+
+    .inner-2 {
+    font-size: 22px;
+    font-family: 'DejaVuSans';
+    position: relative;
+    top: 55%;
+    left: 60px;
+    text-align: center;
+    line-height: 10px;
+    }
+
+    .remarks-1{
+    font-family: 'DejaVuSans-bold';
+    color: #ff0000e8;
+    font-weight: bold;
+    }
+
+    .remarks-2{
+    font-family: 'DejaVuSans-bold';
+    color: #ffc400;
+    font-weight: bold;
     }
   </style>
 </head>
@@ -638,22 +710,42 @@
           the skill areas which you can develop, in order to be proficient in
           your chosen career path
         </p>
+      </div>
+      <div class="section-circle">
+        <div class="circle-1">
+          <span class="inner-1">Chemistry</span>
+          <span class="inner-2">0%</span>
+        </div>
+        <div class="circle-2">
+          <span class="inner-1">Mathematics</span>
+          <span class="inner-2">39%</span>
+        </div>
+        <div class="circle-3">
+          <span class="inner-1">Physics</span>
+          <span class="inner-2">20%</span>
+        </div>
+        <div class="circle-4">
+          <span class="inner-1">Biology</span>
+          <span class="inner-2">55%</span>
+        </div>
+      </div>
+      <div class="section-content">
         <p>
-          1.Overall Analysis (Good): A good overall score indicates that your
+          1.Overall Analysis <span class="remarks-2">(Good):</span> A good overall score indicates that your
           Learning Skills are in sync with the requirements of competitive
           exams. You must work in the areas outlined in the report. A
           combination of Hard Work and Learning Skills will prove instrumental
           in cracking competitive examinations
         </p>
         <p>
-          2.Physics (Good): Physics is the science of how things work. A good
+          2.Physics <span class="remarks-2">(Good):</span> Physics is the science of how things work. A good
           score in Physics indicates that you are satisfactorily skilled at
           understanding how things work. This skill will prove very useful in
           competitive examinations. Keep the skill sharp by always
           understanding the concepts by visualising them
         </p>
         <p>
-          3.Chemistry (Good): Chemistry is the study of matter, its
+          3.Chemistry <span class="remarks-2">(Good):</span> Chemistry is the study of matter, its
           properties, how and why substances combine or separate to form other
           substances, and how substances interact with energy. A good score in
           Chemistry indicates that you are satisfactorily skilled at
@@ -662,8 +754,33 @@
           Class 11 and 12. Keep the skill sharp by always revising the
           concepts you learn.
         </p>
+      </div>
+    </section>
+  </section>
+  <section class="page">
+    <header class="page-header">
+      <img class="byjus-logo"
+        style="height:100px"
+        src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/images/byjus_logo.png" />
+    </header>
+    <section class="section">
+      <div class="section-heading">
+        <h3>LEARNING PATTERN ANALYSIS</h3>
+      </div>
+      <div class="section-content">
         <p>
-          4. Biology. (Good): Biology is the scientific study of living
+          4. Mathematics <span class="remarks-1">(Focus Area):</span> Mathematics is the study of the measurement,
+          properties, and relationships of quantities and sets, using numbers and
+          symbols. Mathematics is a Focus Area for you, it indicates that you need to
+          work on this subject. It is recommended that you understand the concepts by
+          visualising them and focus on retaining the concepts by revision. This skill will
+          prove very useful in attempting engineering entrance examinations (like JEE,
+          WBJEE, KCET, AP EAMCET, GUJCET, etc), and prepare for Olympiads and talent
+          hunt exams.
+        </p>
+      
+        <p>
+          5. Biology. <span class="remarks-2">(Good):</span> Biology is the scientific study of living
           things. A good score in Biology indicates that you have a basic
           knowledge of living organisms and how they function. This skill will
           prove useful in preparing for NEET and other competitive
@@ -671,14 +788,14 @@
           animated diagrams.
         </p>
         <p>
-          5. Application (Good): A good score in Application indicates that
+          6. Application <span class="remarks-2">(Good):</span> A good score in Application indicates that
           you are skilled at the usage of concepts and interlinkages to arrive
           at a solution/ answer. This skill will be very useful in attempting
           questions that involve a combination of concepts. Keep the skills
           sharp by attempting questions involving multiple concepts.
         </p>
         <p>
-          6. Retention (Good): A good score in Retention indicates that you
+          7. Retention <span class="remarks-2">(Good):</span> A good score in Retention indicates that you
           are skilled at dealing with the usage of formulas and/or
           memorization of conditions. This skill will be very useful in
           retaining close to 500 concepts and formulas required for
