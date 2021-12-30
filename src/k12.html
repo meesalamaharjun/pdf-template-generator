@@ -218,6 +218,99 @@
       transform: translateX(-50%);
     }
 
+    .student-performance{
+      font-size: 25px;
+      color: purple;
+      width: 10%;
+      margin-left: 20%;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+}
+    .box-container{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: center;
+      padding: 5px;
+      margin-bottom: 20px;
+    }
+    .box{
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  justify-content: flex-start;
+  background-color: purple ;
+  padding:10px;
+  border-radius: 5%;
+  height: 140px;
+  width: 140px;
+}
+.box-header{
+  font-size: 20px;
+  color:white;
+}
+.box-mid{
+  background-color: white;
+  width:30%;
+  margin:10px 0;
+  padding:1px 0;
+}
+.box-footer{
+  font-size: 30px;
+  color:white;
+}
+.test-summary{
+      background-color: #f1e2f1;
+    }
+    .table-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .table-parent{
+      margin-top: 3rem;
+      background-color: white;
+      width: 33rem;
+      height: 25rem;
+      border-radius: 5%;
+      padding: 1rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+    }
+    .table-row{
+      display: flex;
+      justify-content: center;
+      align-items: top;
+      flex-direction: row;
+      width:100%;
+    }
+    .table-section{
+      border: 1px solid grey;
+      width: 5rem;
+      height:4rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .table-section-font{
+      font-size:13px;
+      font-weight: 600;
+      color:black;
+    }
+    .table-value-last{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .table-value-font{
+      color:purple;
+      font-size: 13px;
+    }
     .ribbon:before {
       content: "";
       position: absolute;
@@ -266,7 +359,7 @@
       padding: 0px 50px 0 100px;
       box-sizing: border-box;
     }
-
+ 
     .report-right {
       display: flex;
       align-items: center;
@@ -511,6 +604,15 @@
     font-family: 'DejaVuSans-bold';
     color: #ffc400;
     font-weight: bold;
+    }
+    
+    .learning-tips{
+      font-size: 18px;
+      line-height: 24px;
+    }
+    
+    .thanks-message {
+      font-family: 'DejaVuSans-bold';
     }
   </style>
 </head>
@@ -805,6 +907,126 @@
       </div>
     </section>
   </section>
+
+  <section class="page test-summary">
+    <header class="page-header">
+      <img class="byjus-logo"
+        style="height:100px"
+        src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/images/byjus_logo.png" />
+    </header>
+    <section class="section">
+      <div class="section-heading">
+        <h3>Test Summary</h3>
+      </div>
+      <div class="section-content">
+        <div class="box-container">
+          <div class="box">
+            <div class="box-header">Questions Attempted</div>
+            <div class="box-mid"></div>
+            <div class="box-footer">38 out of 60</div>
+          </div>
+          <div class="box">
+            <div style="width: 50%;" class="box-header">Total Score</div>
+            <div class="box-mid"></div>
+            <div class="box-footer">82</div>
+          </div>
+          <div class="box">
+            <div class="box-header">Percentage Score</div>
+            <div class="box-mid"></div>
+            <div class="box-footer">34%</div>
+          </div>
+          
+      </div>
+      <div class="box-container">
+        <div class="box">
+          <div class="box-header">All India Percentile</div>
+          <div class="box-mid"></div>
+          <div class="box-footer">80.5</div>
+        </div>
+        <div class="box">
+          <div style="width: 80%;" class="box-header">Average Time / Ques</div>
+          <div class="box-mid"></div>
+          <div class="box-footer">37 secs</div>
+        </div>
+      </div>
+      <div class="student-performance">
+        19.2% 
+        students did 
+        better
+      </div>
+      <div class="section-heading">
+        <h3>Analytics</h3>
+      </div>
+      <div class="table-container">
+      <div class="table-parent">
+        <div class="table-row">
+          <div  class="table-section"></div>
+          <div  class="table-section table-section-font">Attempted</div>
+          <div  class="table-section table-section-font">Correct</div>
+          <div  class="table-section table-section-font">Incorrect</div>
+          <div  class="table-section table-section-font">Total Time Taken</div>
+          <div  class="table-section table-section-font">Average Time / Ques</div>
+        </div>
+        <div class="table-row">
+          <div  class="table-section table-section-font">Overall Analysis</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">23 mins, 35 secs</div>
+          <div  class="table-section table-value-last">
+            <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
+            <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
+          </div>
+        </div>
+        <div class="table-row">
+          <div  class="table-section table-section-font">Physics</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">23 mins, 35 secs</div>
+          <div  class="table-section table-value-last">
+            <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
+            <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
+          </div>
+        </div>
+        <div class="table-row">
+          <div  class="table-section table-section-font">Chemistry</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">23 mins, 35 secs</div>
+          <div  class="table-section table-value-last">
+            <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
+            <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
+          </div>
+        </div>
+        <div class="table-row">
+          <div  class="table-section table-section-font">Mathematics</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">23 mins, 35 secs</div>
+          <div  class="table-section table-value-last">
+            <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
+            <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
+          </div>
+        </div>
+        <div class="table-row">
+          <div  class="table-section table-section-font">Biology</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">38 out of 60</div>
+          <div  class="table-section table-value-font">23 mins, 35 secs</div>
+          <div  class="table-section table-value-last">
+            <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
+            <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </section>
+
   <section class="page keep-learning">
     <header class="page-header">
       <img class="byjus-logo"
@@ -829,7 +1051,7 @@
         </p>
         <p>
           Having identified improvement areas, you need to ask yourself the following questions:
-        <ul>
+        <ul class="learning-tips">
           <li>What is the objective? How can I define the goal that I am aiming for?</li>
           <li>What specific methods will I enrol? For example if classes / seminars / Workshops are required then what
             exactly?</li>
@@ -839,7 +1061,7 @@
         </p>
         <p>
           Development initiatives fall into one of the below categories:
-        <ul>
+        <ul class="learning-tips">
           <li>Self development activities</li>
           <li>Guidance or Counselling</li>
           <li>Administrative support (like projects, classes/seminars/trainings/ workshops, etc.)</li>
