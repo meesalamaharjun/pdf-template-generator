@@ -30,9 +30,8 @@ Handlebars.registerHelper('dateFormat', function dateFormat(date) {
 
 
 const data = {
-	title: "A new Brazilian School",
-  name: "Sachit Agarwal",
-  exam_name: "All India Mock Test",
+  name: "Yashaswini",
+  exam_name: "Comprehensive Evaluation",
   grade: "10TH CBSE",
 	date: "05/12/2018",
 	age: 28,
@@ -62,7 +61,7 @@ const data = {
 
 async function createPDF(data){
 
-	var templateHtml = fs.readFileSync(path.join(process.cwd(), 'src/example.html'), 'utf8');
+	var templateHtml = fs.readFileSync(path.join(process.cwd(), 'src/k12.html'), 'utf8');
 	var template = Handlebars.compile(templateHtml);
 	var html = template(data);
 
