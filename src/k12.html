@@ -13,12 +13,27 @@
 
     @font-face {
       font-family: "DejaVuSans";
-      src: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/fonts/DejaVuSansCondensed-Oblique.ttf") format("truetype");
+      src: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/fonts/DejaVuSansCondensed.ttf") format("truetype");
     }
 
     @font-face {
       font-family: "DejaVuSans-bold";
       src: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/fonts/DejaVuSansCondensed-Bold.ttf") format("truetype");
+    }
+
+    /* @font-face {
+      font-family: "DejaVuSans-oblique";
+      src: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/fonts/DejaVuSansCondensed-Oblique.ttf") format("truetype");
+    } */
+
+    @font-face {
+      font-family: "NotoSans";
+      src: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/fonts/NotoSans-Regular.ttf") format("truetype");
+    }
+    
+    @font-face {
+      font-family: "NotoSans-bold";
+      src: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/fonts/NotoSans-Bold.ttf") format("truetype");
     }
 
     body {
@@ -269,14 +284,12 @@
     }
     .table-container{
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
     }
     .table-parent{
-      margin-top: 3rem;
+      margin-top: 1rem;
       background-color: white;
-      width: 33rem;
+      width: 50rem;
       height: 25rem;
       border-radius: 5%;
       padding: 1rem;
@@ -294,8 +307,8 @@
     }
     .table-section{
       border: 1px solid grey;
-      width: 5rem;
-      height:4rem;
+      width: 8rem;
+      height: 4rem;
       text-align: center;
       display: flex;
       justify-content: center;
@@ -446,6 +459,7 @@
 
     .marks-section {
       display: flex;
+      font-family: 'NotoSans';
       width: 100%;
     }
 
@@ -491,6 +505,7 @@
 
     .address-line {
       font-size: 12px;
+      font-family: 'DejaVuSans-bold';
     }
 
     .side-heading {
@@ -671,7 +686,7 @@
       <div class="marks-section">
         <section class="marks-sub-section">
           <div class="result-section">
-            <div class="report">You have Scored</div>
+            <div class="report">You have scored</div>
             <div class="circle">61%</div>
           </div>
           <div class="result-section down-report">
@@ -689,7 +704,7 @@
           <div class="result-section">
             <div class="circle right-circle">98.3</div>
             <div class="report-right">
-              <span class="right-content">Your ALL India Percentile</span>
+              <span class="right-content">Your All India Percentile</span>
             </div>
           </div>
           <div class="result-section down-report">
