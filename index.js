@@ -135,12 +135,53 @@ async function createPDF(data) {
     "utf8"
   );
   var template = Handlebars.compile(templateHtml);
+
+
+//adding array of subjects in the payload 
+  let subjetArray= data.subjects.split(',')
+
+  let arr=[]
+
+  if(subjetArray.length===1){
+    if(subjetArray[0].contains("and")){
+      let lastElArr=subjetArray[0].split("and")
+      for(let i=0;i<lastElArr.length;i++){
+        let obj={}
+        obj.name=lastElArr[i].trim()
+        obj.data={...data[lastElArr[i].toLowerCase().trim()]}
+        arr.push(obj)
+      }
+    }else{
+      let obj={}
+      obj.name=subjetArray[0].trim()
+      obj.data={...data[subjetArray[0].toLowerCase().trim()]}
+      arr.push(obj)
+    }
+  }else{
+    for(let i=0;i<subjetArray.length-1;i++){
+      let obj={}
+      obj.name=subjetArray[i].trim()
+      obj.data={...data[subjetArray[i].toLowerCase().trim()]}
+      arr.push(obj)
+    }
+    let lastElArr=subjetArray[subjetArray.length-1].split("and")
+      for(let i=0;i<lastElArr.length;i++){
+        let obj={}
+        obj.name=lastElArr[i].trim()
+        obj.data={...data[lastElArr[i].toLowerCase().trim()]}
+        arr.push(obj)
+      }
+
+  }
+  data.subjetArray=JSON.parse(JSON.stringify(arr));
+
+
   var html = template(data);
 
   var milis = new Date();
   milis = milis.getTime();
 
-  var pdfPath = path.join("pdf", `${data.name}-${milis}.pdf`);
+  var pdfPath = path.join("pdf", `${data.name}.pdf`);
 
   var options = {
     printBackground: true,
