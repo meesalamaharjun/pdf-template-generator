@@ -643,6 +643,23 @@
       color: #ffc400;
       font-weight: bold;
     }
+    .Focus {
+      font-family: 'DejaVuSans-bold';
+      color: #ff0000e8;
+      font-weight: bold;
+    }
+
+    .Good {
+      font-family: 'DejaVuSans-bold';
+      color: #ffc400;
+      font-weight: bold;
+    }
+
+    .Excellent {
+      font-family: 'DejaVuSans-bold';
+      color: #09ff00;
+      font-weight: bold;
+    }
 
     .learning-tips {
       font-size: 21px;
@@ -854,38 +871,38 @@
       <div class="section-circle">
         <div class="circle-1">
           <span class="inner-1">Chemistry</span>
-          <span class="inner-2">0%</span>
+          <span class="inner-2">{{chemistry.percentage}}%</span>
         </div>
         <div class="circle-2">
           <span class="inner-1">Mathematics</span>
-          <span class="inner-2">39%</span>
+          <span class="inner-2">{{mathematics.percentage}}%</span>
         </div>
         <div class="circle-3">
           <span class="inner-1">Physics</span>
-          <span class="inner-2">20%</span>
+          <span class="inner-2">{{physics.percentage}}%</span>
         </div>
         <div class="circle-4">
           <span class="inner-1">Biology</span>
-          <span class="inner-2">55%</span>
+          <span class="inner-2">{{biology.percentage}}%</span>
         </div>
       </div>
       <div class="section-content">
         <p>
-          1.Overall Analysis <span class="remarks-2">(Good):</span> A good overall score indicates that your
+          1.Overall Analysis <span class="{{overall_analysis_score.value}}">({{overall_analysis_score.value}}):</span> A good overall score indicates that your
           Learning Skills are in sync with the requirements of competitive
           exams. You must work in the areas outlined in the report. A
           combination of Hard Work and Learning Skills will prove instrumental
           in cracking competitive examinations
         </p>
         <p>
-          2.Physics <span class="remarks-2">(Good):</span> Physics is the science of how things work. A good
+          2.Physics <span class="{{physics_score.value}}">({{physics_score.value}}):</span> Physics is the science of how things work. A good
           score in Physics indicates that you are satisfactorily skilled at
           understanding how things work. This skill will prove very useful in
           competitive examinations. Keep the skill sharp by always
           understanding the concepts by visualising them
         </p>
         <p>
-          3.Chemistry <span class="remarks-2">(Good):</span> Chemistry is the study of matter, its
+          3.Chemistry <span class="{{chemistry_score.value}}">({{chemistry_score.value}}):</span> Chemistry is the study of matter, its
           properties, how and why substances combine or separate to form other
           substances, and how substances interact with energy. A good score in
           Chemistry indicates that you are satisfactorily skilled at
@@ -908,7 +925,7 @@
       </div>
       <div class="section-content">
         <p>
-          4. Mathematics <span class="remarks-1">(Focus Area):</span> Mathematics is the study of the measurement,
+          4. Mathematics <span class="{{mathematics_score.value}}">({{mathematics_score.value}}):</span> Mathematics is the study of the measurement,
           properties, and relationships of quantities and sets, using numbers and
           symbols. Mathematics is a Focus Area for you, it indicates that you need to
           work on this subject. It is recommended that you understand the concepts by
@@ -919,7 +936,7 @@
         </p>
 
         <p>
-          5. Biology. <span class="remarks-2">(Good):</span> Biology is the scientific study of living
+          5. Biology. <span class="{{biology_score.value}}">({{biology_score.value}}):</span> Biology is the scientific study of living
           things. A good score in Biology indicates that you have a basic
           knowledge of living organisms and how they function. This skill will
           prove useful in preparing for NEET and other competitive
@@ -927,14 +944,14 @@
           animated diagrams.
         </p>
         <p>
-          6. Application <span class="remarks-2">(Good):</span> A good score in Application indicates that
+          6. Application <span class="{{application_score.value}}">({{application_score.value}}):</span> A good score in Application indicates that
           you are skilled at the usage of concepts and interlinkages to arrive
           at a solution/ answer. This skill will be very useful in attempting
           questions that involve a combination of concepts. Keep the skills
           sharp by attempting questions involving multiple concepts.
         </p>
         <p>
-          7. Retention <span class="remarks-2">(Good):</span> A good score in Retention indicates that you
+          7. Retention <span class="{{retention_score.value}}">({{retention_score.value}}):</span> A good score in Retention indicates that you
           are skilled at dealing with the usage of formulas and/or
           memorization of conditions. This skill will be very useful in
           retaining close to 500 concepts and formulas required for
