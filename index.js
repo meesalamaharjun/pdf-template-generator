@@ -181,7 +181,7 @@ async function createPDF(data) {
   var milis = new Date();
   milis = milis.getTime();
 
-  var pdfPath = path.join("pdf", `${data.name}.pdf`);
+  var pdfPath = path.join("pdf", `${data.name}-${milis}.pdf`);
 
   var options = {
     printBackground: true,
