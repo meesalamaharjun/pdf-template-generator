@@ -94,8 +94,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid;
       border-radius: 10px;
+      box-shadow: 10px 10px 5px grey;
+      flex-direction: column;
     }
     .circle-percentage {
       width: 100px;
@@ -105,6 +106,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      color:rgb(82, 82, 216);
+      font-size: 30px;
     }
     .second-page {
       margin-top: 32em;
@@ -566,6 +569,7 @@
     }
 
     .inner-1 {
+      font-size: 22px;
       font-family: 'DejaVuSans';
       position: absolute;
       top: 40%;
@@ -575,6 +579,7 @@
     }
 
     .inner-2 {
+      font-size: 22px;
       font-family: 'DejaVuSans';
       position: relative;
       top: 55%;
@@ -623,6 +628,46 @@
       position: relative;
       left: 40px;
     }
+    .circle-box-container{
+      width: 100%;
+    height: 332px;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .circle-text{
+      font-size: 24px;
+      margin: 12px;
+    }
+    .percentile-box{
+      width: 45%;
+      height:100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+    }
+    .percentile-container{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .percentile{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 80px 10px 80px;
+    border-radius: 10px;
+    }
+    .you-percentile{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+    }
   </style>
 </head>
 
@@ -639,17 +684,37 @@
     </section>
     <div class="student-name-container">KUSUM</div>
     <div class="assessment-container">
-      Assessment Date: <span class="assessment-value">{{dateFormat assessment_date format}}</span>
+      Assessment Date: <span class="assessment-value">January 09, 2022</span>
     </div>
     <div class="assessment-container">
-      Enrollment No: <span class="assessment-value">{{enrolment_no}}</span>
+      Enrollment No: <span class="assessment-value">9315845651</span>
     </div>
-    <div class="circle-percentage-container">
+    <div class="circle-box-container">
+      <div class="circle-percentage-container">
       <div class="circle-percentage">
         46%
       </div>
+      <p class="circle-text" style="margin-bottom: 0;">You Have</p>
+      <p class="circle-text" style="margin-top: 0;">Scored</p>
     </div>
-    <img style="width: 100%; height: 70%;margin-bottom: 100px;"
+    <div class="percentile-box">
+      <div class="percentile-container">
+        <div class="percentile" style="background-color: rgb(136, 136, 233);"><p style="font-size: 30px; color: white; margin: 0;">56.8</p><p style="font-size: 10px; color: white;">PERCENTILE</p></div>
+        <div style="width: 176px;font-size: 20px;">Your All India Percentile</div>
+      </div>
+      <div class="percentile-container">
+        <div class="percentile" style="background-color: rgb(25, 175, 212);"><p style="font-size: 30px; color: white; margin: 0;">56.8</p><p style="font-size: 10px; color: white;">PERCENTILE</p></div>
+        <div class="you-percentile"><p style="margin-bottom: 0;font-size: 19px;">Your State Percentile</p>
+        <p style="color: grey;font-size: 18px;">(Uttar Pradesh)</p></div>
+      </div>
+      <div class="percentile-container">
+        <div class="percentile" style="background-color: rgb(47, 92, 240);"><p style="font-size: 30px; color: white; margin: 0;">56.8</p><p style="font-size: 10px; color: white;">PERCENTILE</p></div>
+        <div class="you-percentile"><p style="margin-bottom: 0;font-size: 19px;">Your City Percentile</p>
+        <p style="color: grey;font-size: 18px;">(Gaziabad)</p></div>
+      </div>
+    </div>
+    </div>
+    <img style="width: 100%; height: 70%;"
       src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/images/bnat-k10-down.png" />
     <div class="badge-message">
       Note : *City and State is displayed as entered by the student in the
@@ -663,7 +728,7 @@
     </header>
     <section class="section">
       <div class="section-heading">
-        <h3>WELCOME TO BYJU’S</h3>
+        <h3>WELCOME TO BYJU'S</h3>
         <h3>NATIONAL APTITUDE TEST (BNAT)</h3>
       </div>
       <div class="section-content">
@@ -671,7 +736,7 @@
         <p>Thank you for taking BYJU'S National Aptitude Test (BNAT).</p>
         <p>
           You must have been awaiting the outcome and analysis of the assessment 
-          that you took on {{dateFormat assessment_date format}}. The findings are now here. These have been understood,
+          that you took on January 09, 2022. The findings are now here. These have been understood,
            analysed and interpreted to comprise this report. You will find an elaborate explanation of 
            your Mathematical Ability, Verbal Ability, Logical Ability and Environmental Science in 
            the report. The findings of this report are based entirely on the observations of academic 
@@ -684,7 +749,7 @@
           Counselor.
         </p>
         <p>
-          The BYJU’S Education Counselor will guide you through macro and
+          The BYJU'S Education Counselor will guide you through macro and
           micro analysis of your BNAT result, and assist you in taking the
           right career decision.
         </p>
@@ -694,7 +759,7 @@
           and not a part thereof.
         </p>
         <p>
-          To get the best of {{full_name}} ’s analysis, we strongly urge you to view this report in its entirety.
+          To get the best of KUSUM 's analysis, we strongly urge you to view this report in its entirety.
         </p>
       </div>
     </section>
@@ -719,23 +784,20 @@
       </div>
       <div class="section-circle">
         <div class="circle-1">
-          <span class="inner-1">Mathematical </span>
-           
-           <span style="text-align: center;position: absolute;top: 45%;left: 33%;"> Ability</span>
-          <span class="inner-2">{{[Mathematical Ability].percentage}}%</span>
+          <span class="inner-1">Mathematical Ability</span>
+          <span class="inner-2">{{chemistry.percentage}}%</span>
         </div>
         <div class="circle-2">
-          <span class="inner-1">Environmental</span>
-          <span style="text-align: center;position: absolute;top: 45%;left: 33%;"> Science</span>
-          <span class="inner-2">{{[Environmental Science].percentage}}%</span>
+          <span class="inner-1">Environmental Science</span>
+          <span class="inner-2">{{mathematics.percentage}}%</span>
         </div>
         <div class="circle-3">
           <span class="inner-1">Verbal Ability</span>
-          <span class="inner-2">{{[Verbal Ability].percentage}}%</span>
+          <span class="inner-2">{{physics.percentage}}%</span>
         </div>
         <div class="circle-4">
           <span class="inner-1">Logical Ability</span>
-          <span class="inner-2">{{[Logical Ability].percentage}}%</span>
+          <span class="inner-2">{{biology.percentage}}%</span>
         </div>
       </div>
       <div class="section-content">
@@ -748,14 +810,14 @@
 
         </p>
         <p>
-          2.Mathematical Ability <span class="{{mathematical_ability_score.value}}">({{mathematical_ability_score.value}}):</span> A great score in mathematical ability indicates 
+          2.Mathematical Ability <span class="{{physics_score.value}}">({{physics_score.value}}):</span> A great score in mathematical ability indicates 
           that you are skilled at understanding the concepts and 
           using mathematical operations. This skill will prove 
           useful in solving mathematical problems in competitive exams and further studies. 
           Polish your skill more and more to become better and quicker at math.
         </p>
         <p>
-          3.Verbal Ability <span class="{{verbal_ability_score.value}}">({{verbal_ability_score.value}}):</span> A good score in verbal ability indicates that you are fairly 
+          3.Verbal Ability <span class="{{chemistry_score.value}}">({{chemistry_score.value}}):</span> A good score in verbal ability indicates that you are fairly 
           skilled at expressing thoughts and ideas verbally. It is recommended 
           that you polish your skill further by improving your vocabulary and 
           then testing your knowledge in a limited time frame. This skill will 
@@ -775,7 +837,7 @@
       </div>
       <div class="section-content">
         <p>
-          4. Logical Ability  <span class="{{logical_ability_score.value}}">({{logical_ability_score.value}}):</span> Logical ability is a focus area for you. This indicates that you 
+          4. Logical Ability  <span class="{{mathematics_score.value}}">({{mathematics_score.value}}):</span> Logical ability is a focus area for you. This indicates that you 
           need to work on making inferences and coming to correct conclusions. 
           Then, you will be able to take action based on text, data, and symbols. 
           It is recommended that you polish your skill by solving more questions in 
@@ -785,7 +847,7 @@
         </p>
 
         <p>
-          5. Environmental Science. <span class="{{environmental_science_score.value}}">({{environmental_science_score.value}}):</span> A great score in environmental sciences indicates that you are skilled 
+          5. Environmental Science. <span class="{{biology_score.value}}">({{biology_score.value}}):</span> A great score in environmental sciences indicates that you are skilled 
           at understanding the factors impacting the environment, 
           the role of humans in its degradation, and other related details. 
           Polish your skill further by reading more environment-related material 
@@ -793,7 +855,7 @@
           This skill will prove useful in succeeding in competitive exams and also in general life.
         </p>
         <p>
-          6. Numerical Reasoning <span class="{{numerical_reasoning_score.value}}">({{numerical_reasoning_score.value}}):</span> Numerical reasoning is a focus area for you. 
+          6. Numerical Reasoning <span class="{{application_score.value}}">({{application_score.value}}):</span> Numerical reasoning is a focus area for you. 
           This indicates that you need to work harder on this skill. 
           It is recommended that you practice the use of mathematical operations 
           to increase your speed and efficiency. This will help you achieve an excellent score. 
@@ -801,7 +863,7 @@
 
         </p>
         <p>
-          7. Analytical Reasoning <span class="{{analytical_reasoning_score.value}}">({{analytical_reasoning_score.value}}):</span> Analytical reasoning is a focus area for you. 
+          7. Analytical Reasoning <span class="{{retention_score.value}}">({{retention_score.value}}):</span> Analytical reasoning is a focus area for you. 
           This indicates that you need to work on your ability to look at information, 
           be it qualitative or quantitative in nature, and discern patterns within the information. 
           Polish your skill further by undertaking time-bound tests and reading more related 
@@ -821,7 +883,7 @@
       </div>
       <div class="section-content">
         <p>
-          8. Conceptual Understanding <span class="{{conceptual_understanding_score.value}}">({{conceptual_understanding_score.value}}):</span> Conceptual understanding is a focus area for you. 
+          8. Conceptual Understanding <span class="{{mathematics_score.value}}">({{mathematics_score.value}}):</span> Conceptual understanding is a focus area for you. 
           This indicates that you need to work on your ability to grasp 
           concepts and apply them. Polish your skill further by undertaking time- bound tests 
           and reading more related material to achieve an excellent score. This skill will prove useful
@@ -830,7 +892,7 @@
         </p>
 
         <p>
-          9. Spatial Reasoning. <span class="{{spatial_reasoning_score.value}}">({{spatial_reasoning_score.value}}):</span> Spatial Reasoning is a focus area for you. 
+          9. Spatial Reasoning. <span class="{{biology_score.value}}">({{biology_score.value}}):</span> Spatial Reasoning is a focus area for you. 
           This indicates that you need to work harder at visualising and operating 
           on geometrical figures in 2 and 3-dimensions. It is recommended that you try 
           drawing simple figures to understand concepts. This will help enhance your spatial skills. 
@@ -867,7 +929,7 @@
       </div>
       <div class="section-content">
         <p>
-          12. Speed  <span class="{{speed_score.value}}">({{speed_score.value}}):</span> A great score in speed indicates that you are 
+          12. Speed  <span class="{{mathematics_score.value}}">({{mathematics_score.value}}):</span> A great score in speed indicates that you are 
           quick with your attempts. Polish your skill further by taking 
           more time-bound tests with smaller time frames. This skill will 
           prove highly useful in competitive exams, further studies, and even in daily life.
@@ -875,7 +937,7 @@
         </p>
 
         <p>
-          12. Accuracy. <span class="{{accuracy_score.value}}">({{accuracy_score.value}}):</span> A great score in accuracy indicates 
+          12. Accuracy. <span class="{{biology_score.value}}">({{biology_score.value}}):</span> A great score in accuracy indicates 
           that you are almost accurate with your answers. 
           Polish your skill further by trying to make your attempts more accurate on a 
           regular basis. This skill will prove useful in competitive exams and further studies.
