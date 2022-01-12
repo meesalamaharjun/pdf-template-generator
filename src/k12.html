@@ -3,8 +3,7 @@
 
 <head>
   <script src="https://www.chartjs.org/dist/master/chart.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Shippori+Mincho&display=block" rel="stylesheet" rel="preload"
-    as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Shippori+Mincho&display=block" rel="stylesheet" rel="preload" as="style" />
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=block" rel="stylesheet" rel="preload" as="style" />
   <style>
     @page {
@@ -289,19 +288,25 @@
 
     .test-summary {
       background-color: #f1e2f1;
+       width: 983px;
+     /* height:1273px; */
     }
 
     .table-container {
       display: flex;
-      flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 560px;
     }
 
     .table-parent {
       margin-top: 1rem;
       background-color: white;
-      width: 50rem;
-      height: 25rem;
-      border-radius: 5%;
+      /* width: 50rem;
+      height: 25rem; */
+      border-radius: 3%;
       padding: 1rem;
       display: flex;
       justify-content: flex-start;
@@ -976,17 +981,17 @@
           <div class="box">
             <div class="box-header">Questions Attempted</div>
             <div class="box-mid"></div>
-            <div class="box-footer">38 out of 60</div>
+            <div class="box-footer">{{overall_analytics.attempted}} out of {{overall_analytics.max_questions}}</div>
           </div>
           <div class="box">
             <div style="width: 50%;" class="box-header">Total Score</div>
             <div class="box-mid"></div>
-            <div class="box-footer">82</div>
+            <div class="box-footer">{{overall_analytics.total_score}}</div>
           </div>
           <div class="box">
             <div class="box-header">Percentage Score</div>
             <div class="box-mid"></div>
-            <div class="box-footer">34%</div>
+            <div class="box-footer">{{overall_analytics.overall_percentage}}%</div>
           </div>
 
         </div>
@@ -994,25 +999,26 @@
           <div class="box">
             <div class="box-header">All India Percentile</div>
             <div class="box-mid"></div>
-            <div class="box-footer">80.5</div>
+            <div class="box-footer">{{overall_analytics.overall_percentile}}</div>
           </div>
           <div class="box">
             <div style="width: 80%;" class="box-header">Average Time / Ques</div>
             <div class="box-mid"></div>
-            <div class="box-footer">37 secs</div>
+            <div class="box-footer">{{overall_analytics.average_time_question}}</div>
           </div>
         </div>
-        <div class="student-performance">
-          19.2%
+        <div id="xyz" class="student-performance">
+          <!-- 19.2%
           students did
-          better
+          better -->
+          {{overall_analytics.percentage_better}}
         </div>
         <div class="analytics-heading">
           <h3 style="margin-bottom: 18px;">Analytics</h3>
           <div style="width:120px;border:1px solid purple ;"></div>
         </div>
         <div class="table-container">
-          <div class="table-parent">
+          <div id="table-parent" class="table-parent">
             <div class="table-row">
               <div class="table-section"></div>
               <div class="table-section table-section-font">Attempted</div>
@@ -1023,59 +1029,28 @@
             </div>
             <div class="table-row">
               <div class="table-section table-section-font">Overall Analysis</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">23 mins, 35 secs</div>
+              <div class="table-section table-value-font">{{overall_analytics.attempted}} out of {{overall_analytics.max_questions}}</div>
+              <div class="table-section table-value-font">{{overall_analytics.correct}} out of {{overall_analytics.max_questions}}</div>
+              <div class="table-section table-value-font">{{overall_analytics.incorrect}} out of {{overall_analytics.max_questions}}</div>
+              <div class="table-section table-value-font">{{overall_analytics.total_time_taken}}</div>
               <div class="table-section table-value-last">
-                <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
-                <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
+                <div style="font-size: 13px; color:purple; margin-bottom: 2px;">{{overall_analytics.average_time_question}}</div>
+                <div style="font-size: 11px; color:purple; ">{{overall_analytics.percentage_faster}}% students were faster</div>
               </div>
             </div>
+            {{#each subjetArray}}
             <div class="table-row">
-              <div class="table-section table-section-font">Physics</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">23 mins, 35 secs</div>
+              <div class="table-section table-section-font">{{this.name}}</div>
+              <div class="table-section table-value-font">{{this.data.attempted}} out of {{this.data.max_questions}}</div>
+              <div class="table-section table-value-font">{{this.data.correct}} out of {{this.data.max_questions}}</div>
+              <div class="table-section table-value-font">{{this.data.incorrect}} out of {{this.data.max_questions}}</div>
+              <div class="table-section table-value-font">{{this.data.total_time_taken}}</div>
               <div class="table-section table-value-last">
-                <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
-                <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
+                <div style="font-size: 13px; color:purple; margin-bottom: 2px;">{{this.data.average_time_question}}</div>
+                <div style="font-size: 11px; color:purple; ">{{this.data.percentage_faster}}% students were faster</div>
               </div>
             </div>
-            <div class="table-row">
-              <div class="table-section table-section-font">Chemistry</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">23 mins, 35 secs</div>
-              <div class="table-section table-value-last">
-                <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
-                <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
-              </div>
-            </div>
-            <div class="table-row">
-              <div class="table-section table-section-font">Mathematics</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">23 mins, 35 secs</div>
-              <div class="table-section table-value-last">
-                <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
-                <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
-              </div>
-            </div>
-            <div class="table-row">
-              <div class="table-section table-section-font">Biology</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">23 mins, 35 secs</div>
-              <div class="table-section table-value-last">
-                <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
-                <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
-              </div>
-            </div>
+          {{/each}}
           </div>
         </div>
     </section>
