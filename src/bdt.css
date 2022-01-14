@@ -669,51 +669,6 @@ ul li::before {
   width: 85%;
 }
 
-.units-subject-container {
-  width: 400px;
-  height: 400px;
-  border: 1px solid;
-}
-
-.progress-bar {
-  height: 15px;
-  width: 400px;
-  background: grey;
-  border-radius: 20px;
-  margin-left: 20px;
-}
-
-.each-subject-container {
-  display: flex;
-  justify-self: center;
-  align-items: center;
-}
-
-.percentage-bar {
-  width: 66%;
-  height: 100%;
-  background: white;
-  border-radius: 20px;
-}
-
-.subject-name {
-  margin-top: 20px;
-}
-
-.percentage-value {
-  margin-left: 60%;
-}
-
-.subject-name {
-  margin-top: 15px;
-}
-
-.subject-name-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-}
-
 .circular-progress-bar {
   margin: 70px;
   width: 200px;
@@ -884,4 +839,142 @@ ul li::before {
 }
 .bullet-page-title {
   font-size: 58px;
+}
+
+/* unit wise gap analysis page */
+.unit-gap-page {
+  width: 868px;
+}
+.unit-gap-analysis-section {
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+}
+
+.unit-wise-analysis-hr {
+  margin: 12px 120px 23px 40px;
+}
+
+.score-title {
+  display: flex;
+  justify-content: right;
+  padding-right: 40px;
+}
+
+.score-title-text {
+  padding-bottom: 4px;
+  border-bottom: 1px solid white;
+}
+
+.unit-subject-card {
+  border: none;
+  background: none;
+  height: 100%;
+  position: relative;
+  flex-basis: 20%;
+}
+
+.unit-subject-card img {
+  width: 100%;
+}
+
+.unit-subject-card-title {
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.unit-subject-details {
+  display: flex;
+  flex-basis: 80%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subject-item {
+  display: flex;
+  align-items: center;
+}
+
+.subject-name {
+  flex-basis: 25%;
+  /* margin-top: 36px; */
+  font-size: 18px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.subject-percentage-item {
+  flex-basis: 55%;
+  margin-left: 16px;
+  position: relative;
+}
+
+.subject-percentage-item img {
+  width: 100%;
+}
+
+.percentage-value {
+  position: absolute;
+  bottom: 12px;
+}
+
+.subject-percentage-avatar {
+  margin-left: 12px;
+}
+
+.subject-percentage-avatar img {
+  width: 32px;
+}
+
+.subject-score-item {
+  margin-left: 32px;
+  font-size: 18px;
+}
+
+.unit-analysis {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 16px 0;
+}
+
+.unit-analysis img {
+  width: 80%;
+}
+
+.unit-analysis-text {
+  width: 55%;
+  position: absolute;
+  top: 60px;
+  font-size: 18px;
+  left: 240px;
+  line-height: 1.2;
+}
+
+.unit-gap-problem-section {
+  position: relative;
+}
+
+.unit-gap-problem-text-container {
+  position: absolute;
+  top: 48px;
+  left: 64px;
+  width: 80%;
+  font-size: 16px;
+}
+
+.unit-gap-problem-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.unit-gap-problem-text {
+  margin: 0;
 }
