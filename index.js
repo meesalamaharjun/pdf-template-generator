@@ -284,7 +284,7 @@ const k_10_response = {
 };
 async function createPDF(data) {
   var templateHtml = fs.readFileSync(
-    path.join(process.cwd(), "src/k10.html"),
+    path.join(process.cwd(), "src/bdt.html"),
     "utf8"
   );
   var template = Handlebars.compile(templateHtml);
