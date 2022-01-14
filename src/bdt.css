@@ -20,6 +20,19 @@
   margin-top: 40px;
 }
 
+.banner-1 {
+  padding: 20px 40px;
+  background: linear-gradient(180deg, #8a4493 0%, rgba(255, 255, 255, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 20px;
+  font-size: 20px;
+  align-items: left;
+  margin-top: 40px;
+}
 @page {
   size: auto;
 }
@@ -870,7 +883,12 @@ ul li::before {
   background-image: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+63%40200x.png");
   background-repeat: no-repeat;
   height: 1056px;
-  background-size: 848px 1056px;
+  background-size: cover;
+}
+.each-page-1{
+  background-image: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+63%40200x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page-icon {
@@ -891,4 +909,91 @@ ul li::before {
 }
 .bullet-page-title {
   font-size: 58px;
+}
+.third-page-heading{
+  color: white; 
+  font-size: 47px; 
+  padding:35px 0px 20px 40px;
+}
+.date-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 40px;
+}
+.date-container-heading{
+  font-size:25px;
+  color:white;
+  margin-bottom: 0px;
+}
+.date-container-text{
+  font-size:45px;
+  color:white;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.content-one{
+  display:flex;
+  justify-content: space-around ;
+  align-items: center;
+  flex-direction: column;
+  padding-top:10px;
+}
+.text-one{
+  color: white;
+  font-size: 25px;
+}
+.text-two{
+  color: white;
+  font-size: 40px;
+  padding-top:5px;
+}
+.subject-wise-analysis{
+  color: white;
+  font-size: 47px;
+  padding: 32px 0px 25px 40px;
+}
+.subject-wise-analysis-content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: top;
+  margin-bottom:0px;
+  width:70%;
+  margin-left:150px;
+}
+.card-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: top;
+  color: white;
+  position: relative;
+  align-items: center;
+}
+.grey-background{
+position: absolute; 
+display: flex; 
+justify-content: center;
+flex-direction: column;
+align-items: center; 
+background-color: grey;
+opacity:0.2;
+padding: 120px 100px 120px 100px;
+ border-radius: 10px;
+}
+.card-content{
+  z-index: 9;
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 19px;
+
+}
+.line{
+  width: 146px;;
+  padding: 1px 0px;
+  background-color: rgb(153 145 145);
+  margin-top: 10px;
 }
