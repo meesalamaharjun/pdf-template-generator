@@ -809,7 +809,7 @@ ul li::before {
   background-image: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+63%40200x.png");
   background-repeat: no-repeat;
   height: 1056px;
-  background-size: 848px 1056px;
+  background-size: cover;
 }
 
 .separator {
