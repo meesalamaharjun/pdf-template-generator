@@ -1,3 +1,7 @@
+body {
+  width: 868px;
+}
+
 .hornImage {
   width: 40px;
   margin-right: 20px;
@@ -5,6 +9,13 @@
 .justifycenter {
   display: flex;
   justify-content: center;
+}
+
+.divider {
+  height: 2px;
+  border-radius: 20px;
+  background-color: #904295;
+  width: 90%;
 }
 
 .title {
