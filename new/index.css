@@ -10,13 +10,16 @@
     format("truetype");
 }
 
+/* Elements */
 body {
   width: 868px;
   margin: 0px;
   color: white;
   font-family: "DejaVuSans";
 }
-
+p {
+  margin: 0px;
+}
 section {
   background: url(./assets/background.png);
   background-size: cover;
@@ -24,6 +27,7 @@ section {
   padding: 20px;
 }
 
+/* Text */
 .title {
   font-size: 54px;
   font-weight: bold;
@@ -41,6 +45,11 @@ section {
   margin: 0px;
 }
 
+.boldText1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 /* Flex */
 .justifyCenter {
   display: flex;
@@ -53,4 +62,19 @@ section {
 .spaceBetween {
   display: flex;
   justify-content: space-between;
+}
+
+.divider {
+  height: 2px;
+  background-color: white;
+  border-radius: 200;
+  width: 90%;
+  margin: 20px 30px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+.mt40 {
+  margin-top: 40px;
 }
