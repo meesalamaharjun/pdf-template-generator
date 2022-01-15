@@ -1,5 +1,5 @@
 {
-  "learning-report-data": [
+  "learningReport": [
     {
       "id": 1,
       "title": "Why are we doing this?",
@@ -44,7 +44,7 @@
       "icon": "https://aits-assets.s3.ap-south-1.amazonaws.com/bdt2.0-assets/question-wise.png"
     }
   ],
-  "overall-analysis": {
+  "overall": {
     "test_date": "6th Jan",
     "result_text": "SIGNIFICANT GAP",
     "overall_percentage": "16",
@@ -67,7 +67,7 @@
       }
     ]
   },
-  "unit-wise": {
+  "unitWise": {
     "unit_message": "As you can see, there are many topics where we have identified gaps. Tarun has a significant gap in Food from plants, Animals, and Human body and a moderate gap in Fractions and Forms of matter. These gaps might interfere with learning science and mathematics in the current grade.",
     "subjects": [
       {
@@ -126,7 +126,7 @@
       }
     ]
   },
-  "difficulty-and-skill": {
+  "difficulty": {
     "difficulty_message": "Tarun has done well with medium / hard concepts in Forms of matter and Measurements. We do notice gaps in Biology and Algebra. Tarun needs to start with easy concepts and work his way upwards to hard ones.",
     "skill_message": "Tarun has shown good conceptual understanding in Properties of water and Maps. This is really good. Tarun also seems to be able to apply what was learnt in Geometry and Chemistry We do notice gaps in Biology and Geometry. Tarun needs a thorough revision and practice in these. ",
     "difficulty": [
