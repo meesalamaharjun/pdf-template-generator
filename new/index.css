@@ -30,6 +30,17 @@ section {
   margin: 0px;
 }
 
+.subtitle {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.description {
+  font-size: 22px;
+  margin: 0px;
+}
+
 /* Flex */
 .justifyCenter {
   display: flex;
