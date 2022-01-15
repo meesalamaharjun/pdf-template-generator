@@ -100,9 +100,6 @@ section {
   padding: 30px;
   border-radius: 30px;
   margin: 30px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .hornImage {
