@@ -39,10 +39,18 @@ section {
   font-weight: bold;
   margin: 0px;
 }
+.subtitle-2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 5px 0px;
+}
 
 .description {
   font-size: 18px;
   margin: 0px;
+}
+.smallDescription {
+  font-size: 14px;
 }
 
 .description-2 {
@@ -243,4 +251,34 @@ section {
 
 .infoContainer {
   margin-top: 60px;
+}
+
+/* Donut */
+.donutContainer {
+  position: relative;
+  float: left;
+  text-align: center;
+  margin: 40px;
+}
+
+svg {
+  transform: rotate(-90deg);
+}
+
+svg text {
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.donut {
+  stroke-dasharray: 440;
+}
+
+.svgText {
+  font-size: 40px;
+  transform: rotate(90deg);
+}
+
+.groupRotate {
+  transform: rotate(0deg);
 }

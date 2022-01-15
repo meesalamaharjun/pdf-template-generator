@@ -1,409 +1,572 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script src="https://www.chartjs.org/dist/master/chart.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Shippori+Mincho&display=block"
+      rel="stylesheet"
+      rel="preload"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=block"
+      rel="stylesheet"
+      rel="preload"
+      as="style"
+    />
+    <link href="./bdt.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <script src="https://www.chartjs.org/dist/master/chart.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Shippori+Mincho&display=block" rel="stylesheet" rel="preload"
-    as="style" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=block" rel="stylesheet" rel="preload" as="style" />
-  <link href="./bdt.css" rel="stylesheet">
-</head>
+  <body>
+    <section class="first-page page">
+      <div>
+        <h1 class="student-report-title-container title">
+          Difficulty and Skill Analysis
+        </h1>
+      </div>
+      <div class="justifycenter">
+        <div class="divider"></div>
+      </div>
+      <h2
+        class="student-report-title-container margin0"
+        style="font-size: 45px; margin-top: 20px"
+      >
+        Difficulty-wise accuracy
+      </h2>
 
-<body>
-  <section class="first-page page">
-    <div>
-      <h1 class="student-report-title-container title">Difficulty and Skill Analysis</h1>
-    </div>
-    <div class="justifycenter">
-      <div class="divider"></div>
-    </div>
-    <h2 class="student-report-title-container margin0" style="font-size: 45px;margin-top: 20px;">Difficulty-wise accuracy</h2>
-    <div class="justifycenter">
-      <div class="banner">
-        <img src="../bdt/All page assets PNGs & SVGs/Page 5/SVG/horn.png" class="hornImage"/>
-        You need to work on your learning gaps, Start with
-  targetting easy questions and move up the ladder.
-      </div>
-    </div>
-    <h2 class="student-report-title-container margin0" style="font-size: 45px;margin-top: 20px;">Skill-wise accuracy</h2>
-    <div class="justifycenter">
-      <div class="banner">
-        <img src="../bdt/All page assets PNGs & SVGs/Page 5/SVG/horn.png" class="hornImage"/>
-        We do understand that Inconsistent learning during
-the pandemic seems to have taken a toll on your
-conceptual and application skills.
-      </div>
-    </div>
-  </section>
-  <section class="first-page page">
-    <section class="student-report-title-container">
-      <span class="first-heading"> A note from our team </span>
-    </section>
-    <img class="separator"
-      src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+172%40200x.png" />
-    <section class="first-page-section-container">
-      <section class="first-page-section">
-        <p class="description">
-          Hi there. We understand that Lorem is a wonderful student, and the
-          pandemic situation likely caused many hurdles in the learning
-          journey over the past year.
-        </p>
-        <p class="description">
-          We believe that the right intervention and the right modes of
-          learning, practice and testing would enable every child to become a
-          better version of themselves.
-        </p>
-        <p class="description">
-          With that awareness, and the knowledge and tools to identify
-          learning patterns and skills, we have designed this diagnostic test
-          to help identify where and what the learning gaps are.
-        </p>
-        <p class="description">
-          To enable students to make up for such losses, we have designed
-          bridge courses that deal with pre-requisites and topics that are
-          critical for science and mathematics in current and future grades.
-        </p>
-        <p class="description">
-          This diagnostic test is designed with 20 questions that probe
-          different skill areas and critical concepts from the previous grade
-          across various levels of difficulty.
-        </p>
-        <p class="description">
-          This report is an attempt to make you aware of gaps, if any, and to
-          reassure you that we are here to help.
-        </p>
-      </section>
-    </section>
-  </section>
-  <section class="first-page content-page" style="background-color: rgb(53, 9, 53);">
-    <section class="student-report-title-container bullet-page-title">
-      <span class="first-heading"> Tarun’s </span>
-      <span > Learning-Gaps Report</span>
-    </section>
-    <img class="separator final-page-separator"
-      src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+172%40200x.png" />
-
-    <div class="content-list">
-      <div class="contenet-unit">
-        <div>
-          <img class="page-icon"
-            src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+62%40200x.png" />
-        </div>
-        <div class="content-text">
-          <p class="items-content">Why are we doing this?</p>
-          <p class="items-sub-content">Why did we conduct BYJU’S Learning-Gaps Diagnostic Test and introduce the Bridge
-            Course</p>
-        </div>
-      </div>
-      <div class="contenet-unit">
-        <div>
-          <img class="page-icon"
-          src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+61%40200x.png" />
-        </div>
-        <div class="content-text">
-          <p class="items-content">Overall and subject-wise gap analysis</p>
-          <p class="items-sub-content">Highlights of test performance and overall gaps identified</p>
-        </div>
-      </div>
-      <div class="contenet-unit">
-        <div>
-          <img class="page-icon"
-          src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+60%40200x.png" />
-        </div>
-        <div class="content-text">
-          <p class="items-content">Unit-wise Gap-Analysis</p>
-          <p class="items-sub-content">Learning gaps and strengths across units in Science and Mathematics</p>
-        </div>
-      </div>
-      <div class="contenet-unit">
-        <div>
-          <img class="page-icon"
-          src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+58%40200x.png" />
-        </div>
-        <div class="content-text">
-          <p class="items-content">Skill Gap and Difficulty based Analysis</p>
-          <p class="items-sub-content">Accuracy-based feedback on conceptual understanding and application skills, as
-            well as across difficulty levels</p>
-        </div>
-      </div>
-      <div class="contenet-unit">
-        <div>
-          <img class="page-icon"
-          src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+59%40200x.png" />
-        </div>
-        <div class="content-text">
-          <p class="items-content">Conceptual Gaps</p>
-          <p class="items-sub-content">Concepts that Lorem gave wrong answers at, and how they could result in learning
-            loss this year.</p>
-        </div>
-      </div>
-      <div class="contenet-unit">
-        <div>
-          <img class="page-icon"
-          src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+57%40200x.png" />
-        </div>
-        <div class="content-text">
-          <p class="items-content">Remedial options</p>
-          <p class="items-sub-content">The Bridge Course for the student - built around the two-teacher model as guided
-            learning sessions targeting the gap-areas</p>
-        </div>
-      </div>
-      <div class="contenet-unit">
-        <div>
-          <img class="page-icon"
-          src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+56%40200x.png" />
-        </div>
-        <div class="content-text">
-          <p class="items-content">Question-wise deep-dive</p>
-          <p class="items-sub-content">Concept connections and learning deficiencies identified on the basis of each
-            wrong answer made by the student</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="first-page content-page" style="background-color: rgb(53, 9, 53);">
-    <div style="color: white; font-size: 47px; padding:75px 0px 60px 75px;">
-      Overall Analysis
-    </div>
-    <div style="display: flex;justify-content: center;flex-direction: column; align-items: left; padding-left: 74px;">
-      <p style="font-size:25px;color:white; margin-bottom: 0px;">Date of test</p>
-      <p style="font-size:45px;color:white; margin-top: 2px">06th Jan</p>
-    </div>
-    <div style="width:100%;padding:0px 0px; display: flex;justify-content: center;align-items: center;">
-      <div
-        style="display:flex;justify-content: space-around ;align-items: center; flex-direction: column;padding-right: 35px">
-        <div style="color: white;font-size: 25px;">Questions attempted</div>
-        <div style="color: white;font-size: 45px;">9/30</div>
-      </div>
-      <div style="display:flex;justify-content: space-around ;align-items: center; flex-direction: column;">
-        <div style="color: white;font-size: 25px;">Questions correct</div>
-        <div style="color: white;font-size: 45px;">5/30</div>
-      </div>
-      <div
-        style="display:flex;justify-content: space-around ;align-items: center; flex-direction: column;padding-left: 35px">
-        <div style="color: white;font-size: 25px;">Total time taken</div>
-        <div style="color: white;font-size: 45px;">7min 20sec</div>
-      </div>
-    </div>
-    <div style="width: 60%;text-align: center;font-size: 25px;color: white;padding-top: 65px;padding-left: 195px;">Tarun
-      has shown good confidence by attempting most questions in the stipulated time.</div>
-    <div style="color: white; font-size: 47px; padding:32px 0px 60px 75px;">
-      Subject wise Analysis:
-    </div>
-    <div class="justifycenter">
-      <div class="banner">
-        <img src="../bdt/All page assets PNGs & SVGs/Page 5/SVG/horn.png" class="hornImage" style="width: 60px;">
-        <div>There
-          is a moderate learning gap in Science and a significant learning gap in Maths. These should be addressed
-          immediately, as they can affect your performance in the current and upcoming grades.Tarun has shown good
-          confidence by attempting </div>
-      </div>
-    </div>
+      <div class="justifyCenter"></div>
       <div class="justifycenter">
         <div class="banner">
-          <div>Let’s see what critical concepts
-            were assessed in this test, and how it might impact Lorem’s learning this year</div>
+          <img
+            src="../bdt/All page assets PNGs & SVGs/Page 5/SVG/horn.png"
+            class="hornImage"
+          />
+          You need to work on your learning gaps, Start with targetting easy
+          questions and move up the ladder.
         </div>
+      </div>
+      <h2
+        class="student-report-title-container margin0"
+        style="font-size: 45px; margin-top: 20px"
+      >
+        Skill-wise accuracy
+      </h2>
+      <div class="justifycenter">
+        <div class="banner">
+          <img
+            src="../bdt/All page assets PNGs & SVGs/Page 5/SVG/horn.png"
+            class="hornImage"
+          />
+          We do understand that Inconsistent learning during the pandemic seems
+          to have taken a toll on your conceptual and application skills.
         </div>
-
-  </section>
-
-
-  <section class="first-page page">
-    <section class="student-report-title-container">
-      <span class="first-heading"> Remedial Option - </span>
-      <span> BYJU’S Bridge-Course </span>
+      </div>
     </section>
-    <img class="separator final-page-separator"
-      src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+172%40200x.png" />
-    <section class="second-page-section-container">
-      <section class="second-page-section">
-        <p class="second-description">
-          We have customized our BYJU’S Classes with Two-Teacher Advantage
-          learn- ing model with feedback from multiple parents and students to
-          build the BYJU’S Bridge-Classes.
-        </p>
-        <p class="second-description">
-          We understand that the pandemic might have led to forgetting the
-          basics, not strengthening the foundations, not having practiced
-          enough and skilled up to apoply concepts learnt. The purpose of this
-          diagnostic test was to identify gaps in learning across concepts and
-          skills.
-        </p>
-        <div class="second-description">
-          <div class="second-desc-header">How can this help Tarun ?</div>
-          The Bridge Course is a set of classes that Lorem can take to address
-          these gaps. The two-teacher session-format - one for guidance,
-          doubt-solving and practice - and another for delivering conceptual
-          clarity through well-crafted videos - along with strong support from
-          Lorem’s mentors would help Lorem cope up before exploring topics in
-          the current grade.
-        </div>
+    <section class="first-page page">
+      <section class="student-report-title-container">
+        <span class="first-heading"> A note from our team </span>
+      </section>
+      <img
+        class="separator"
+        src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+172%40200x.png"
+      />
+      <section class="first-page-section-container">
+        <section class="first-page-section">
+          <p class="description">
+            Hi there. We understand that Lorem is a wonderful student, and the
+            pandemic situation likely caused many hurdles in the learning
+            journey over the past year.
+          </p>
+          <p class="description">
+            We believe that the right intervention and the right modes of
+            learning, practice and testing would enable every child to become a
+            better version of themselves.
+          </p>
+          <p class="description">
+            With that awareness, and the knowledge and tools to identify
+            learning patterns and skills, we have designed this diagnostic test
+            to help identify where and what the learning gaps are.
+          </p>
+          <p class="description">
+            To enable students to make up for such losses, we have designed
+            bridge courses that deal with pre-requisites and topics that are
+            critical for science and mathematics in current and future grades.
+          </p>
+          <p class="description">
+            This diagnostic test is designed with 20 questions that probe
+            different skill areas and critical concepts from the previous grade
+            across various levels of difficulty.
+          </p>
+          <p class="description">
+            This report is an attempt to make you aware of gaps, if any, and to
+            reassure you that we are here to help.
+          </p>
+        </section>
       </section>
     </section>
-    <div class="classes-container">
-      <img class="classes-image"
-        src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+7/PNG/Asset+148%40200x.png" />
-    </div>
-    <div class="banner">
-      We do understand that Inconsistent learning during
-the pandemic seems to have taken a toll on your
-conceptual and application skills.
-    </div>
-  </section>
+    <section
+      class="first-page content-page"
+      style="background-color: rgb(53, 9, 53)"
+    >
+      <section class="student-report-title-container bullet-page-title">
+        <span class="first-heading"> Tarun’s </span>
+        <span> Learning-Gaps Report</span>
+      </section>
+      <img
+        class="separator final-page-separator"
+        src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+172%40200x.png"
+      />
 
-  <!-- unit wise gap analysis page -->
-  <section class="first-page page unit-gap-page">
-    <section class="student-report-title-container">
-      <span class="first-heading"> Unit-wise Gap Analysis </span>
+      <div class="content-list">
+        <div class="contenet-unit">
+          <div>
+            <img
+              class="page-icon"
+              src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+62%40200x.png"
+            />
+          </div>
+          <div class="content-text">
+            <p class="items-content">Why are we doing this?</p>
+            <p class="items-sub-content">
+              Why did we conduct BYJU’S Learning-Gaps Diagnostic Test and
+              introduce the Bridge Course
+            </p>
+          </div>
+        </div>
+        <div class="contenet-unit">
+          <div>
+            <img
+              class="page-icon"
+              src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+61%40200x.png"
+            />
+          </div>
+          <div class="content-text">
+            <p class="items-content">Overall and subject-wise gap analysis</p>
+            <p class="items-sub-content">
+              Highlights of test performance and overall gaps identified
+            </p>
+          </div>
+        </div>
+        <div class="contenet-unit">
+          <div>
+            <img
+              class="page-icon"
+              src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+60%40200x.png"
+            />
+          </div>
+          <div class="content-text">
+            <p class="items-content">Unit-wise Gap-Analysis</p>
+            <p class="items-sub-content">
+              Learning gaps and strengths across units in Science and
+              Mathematics
+            </p>
+          </div>
+        </div>
+        <div class="contenet-unit">
+          <div>
+            <img
+              class="page-icon"
+              src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+58%40200x.png"
+            />
+          </div>
+          <div class="content-text">
+            <p class="items-content">Skill Gap and Difficulty based Analysis</p>
+            <p class="items-sub-content">
+              Accuracy-based feedback on conceptual understanding and
+              application skills, as well as across difficulty levels
+            </p>
+          </div>
+        </div>
+        <div class="contenet-unit">
+          <div>
+            <img
+              class="page-icon"
+              src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+59%40200x.png"
+            />
+          </div>
+          <div class="content-text">
+            <p class="items-content">Conceptual Gaps</p>
+            <p class="items-sub-content">
+              Concepts that Lorem gave wrong answers at, and how they could
+              result in learning loss this year.
+            </p>
+          </div>
+        </div>
+        <div class="contenet-unit">
+          <div>
+            <img
+              class="page-icon"
+              src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+57%40200x.png"
+            />
+          </div>
+          <div class="content-text">
+            <p class="items-content">Remedial options</p>
+            <p class="items-sub-content">
+              The Bridge Course for the student - built around the two-teacher
+              model as guided learning sessions targeting the gap-areas
+            </p>
+          </div>
+        </div>
+        <div class="contenet-unit">
+          <div>
+            <img
+              class="page-icon"
+              src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+56%40200x.png"
+            />
+          </div>
+          <div class="content-text">
+            <p class="items-content">Question-wise deep-dive</p>
+            <p class="items-sub-content">
+              Concept connections and learning deficiencies identified on the
+              basis of each wrong answer made by the student
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-    <hr class="unit-wise-analysis-hr" />
-    <div class="score-title">
-        <span class="score-title-text">
-            score
-        </span>
-    </div>
-    <section class="unit-gap-analysis-section">
-
-      <div class="unit-subject-card">
-        <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+120.svg" >
-        <span class="unit-subject-card-title">
-          Mathematics
-        </span>
+    <section
+      class="first-page content-page"
+      style="background-color: rgb(53, 9, 53)"
+    >
+      <div style="color: white; font-size: 47px; padding: 75px 0px 60px 75px">
+        Overall Analysis
       </div>
-
-      <div class="unit-subject-details">
-
-        <div class="subject-item">
-          <div class="subject-name">Geometry</div>
-          <div class="subject-percentage-item">
-            <span class="percentage-value" style="left:70%;">70%</span>
-            <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/PNG/Asset+112@200x.png" >
-          </div>
-          <div class="subject-percentage-avatar">
-            <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+91.svg" class="subject-percentage-item-avatar">
-          </div>
-          <div class="subject-score-item">3/4</div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: left;
+          padding-left: 74px;
+        "
+      >
+        <p style="font-size: 25px; color: white; margin-bottom: 0px">
+          Date of test
+        </p>
+        <p style="font-size: 45px; color: white; margin-top: 2px">06th Jan</p>
+      </div>
+      <div
+        style="
+          width: 100%;
+          padding: 0px 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            padding-right: 35px;
+          "
+        >
+          <div style="color: white; font-size: 25px">Questions attempted</div>
+          <div style="color: white; font-size: 45px">9/30</div>
         </div>
-        <div class="subject-item">
-          <div class="subject-name">Numbers</div>
-          <div class="subject-percentage-item">
-            <span class="percentage-value" style="left:40%;">40%</span>
-            <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/PNG/Asset+117@200x.png" >
-          </div>
-          <div class="subject-percentage-avatar">
-            <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+92.svg" class="subject-percentage-item-avatar">
-          </div>
-          <div class="subject-score-item">2/5</div>
+        <div
+          style="
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+          "
+        >
+          <div style="color: white; font-size: 25px">Questions correct</div>
+          <div style="color: white; font-size: 45px">5/30</div>
         </div>
-        <div class="subject-item">
-          <div class="subject-name">Algebra</div>
-          <div class="subject-percentage-item">
-            <span class="percentage-value" style="left:20%;">20%</span>
-            <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/PNG/Asset+114@200x.png" >
-          </div>
-          <div class="subject-percentage-avatar">
-            <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+92.svg" class="subject-percentage-item-avatar">
-          </div>
-          <div class="subject-score-item">1/5</div>
+        <div
+          style="
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            padding-left: 35px;
+          "
+        >
+          <div style="color: white; font-size: 25px">Total time taken</div>
+          <div style="color: white; font-size: 45px">7min 20sec</div>
         </div>
-        <div class="subject-item">
-          <div class="subject-name">Statistics</div>
-          <div class="subject-percentage-item">
-            <span class="percentage-value" style="left:33%;">33%</span>
-            <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/PNG/Asset+113@200x.png" >
+      </div>
+      <div
+        style="
+          width: 60%;
+          text-align: center;
+          font-size: 25px;
+          color: white;
+          padding-top: 65px;
+          padding-left: 195px;
+        "
+      >
+        Tarun has shown good confidence by attempting most questions in the
+        stipulated time.
+      </div>
+      <div style="color: white; font-size: 47px; padding: 32px 0px 60px 75px">
+        Subject wise Analysis:
+      </div>
+      <div class="justifycenter">
+        <div class="banner">
+          <img
+            src="../bdt/All page assets PNGs & SVGs/Page 5/SVG/horn.png"
+            class="hornImage"
+            style="width: 60px"
+          />
+          <div>
+            There is a moderate learning gap in Science and a significant
+            learning gap in Maths. These should be addressed immediately, as
+            they can affect your performance in the current and upcoming
+            grades.Tarun has shown good confidence by attempting
           </div>
-          <div class="subject-percentage-avatar">
-            <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+92.svg" class="subject-percentage-item-avatar">
-          </div>
-          <div class="subject-score-item">1/3</div>
         </div>
-    </div>
+      </div>
+      <div class="justifycenter">
+        <div class="banner">
+          <div>
+            Let’s see what critical concepts were assessed in this test, and how
+            it might impact Lorem’s learning this year
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- unit analysis -->
-    <div class="unit-analysis">
-      <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+107.svg" class="unit-analysis-img">
-      <div class="unit-analysis-text">
-        Tarun seems to have aced mathematics concepts like Number sense, Measurements. Good going! That’ll be useful this year in mastering Mathematics!
+    <section class="first-page page">
+      <section class="student-report-title-container">
+        <span class="first-heading"> Remedial Option - </span>
+        <span> BYJU’S Bridge-Course </span>
+      </section>
+      <img
+        class="separator final-page-separator"
+        src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+2/PNG/Asset+172%40200x.png"
+      />
+      <section class="second-page-section-container">
+        <section class="second-page-section">
+          <p class="second-description">
+            We have customized our BYJU’S Classes with Two-Teacher Advantage
+            learn- ing model with feedback from multiple parents and students to
+            build the BYJU’S Bridge-Classes.
+          </p>
+          <p class="second-description">
+            We understand that the pandemic might have led to forgetting the
+            basics, not strengthening the foundations, not having practiced
+            enough and skilled up to apoply concepts learnt. The purpose of this
+            diagnostic test was to identify gaps in learning across concepts and
+            skills.
+          </p>
+          <div class="second-description">
+            <div class="second-desc-header">How can this help Tarun ?</div>
+            The Bridge Course is a set of classes that Lorem can take to address
+            these gaps. The two-teacher session-format - one for guidance,
+            doubt-solving and practice - and another for delivering conceptual
+            clarity through well-crafted videos - along with strong support from
+            Lorem’s mentors would help Lorem cope up before exploring topics in
+            the current grade.
+          </div>
+        </section>
+      </section>
+      <div class="classes-container">
+        <img
+          class="classes-image"
+          src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+7/PNG/Asset+148%40200x.png"
+        />
       </div>
-    </div>
-
-    <!-- science section -->
-    <div class="score-title">
-        <span class="score-title-text">
-            score
-        </span>
-    </div>
-    <section class="unit-gap-analysis-section">
-
-      <div class="unit-subject-card">
-        <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+119.svg" >
-        <span class="unit-subject-card-title">
-          Science
-        </span>
+      <div class="banner">
+        We do understand that Inconsistent learning during the pandemic seems to
+        have taken a toll on your conceptual and application skills.
       </div>
-      <div class="unit-subject-details">
-
-        <div class="subject-item">
-          <div class="subject-name">Physics</div>
-          <div class="subject-percentage-item">
-            <span class="percentage-value" style="left:80%;">80%</span>
-            <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/PNG/Asset+116@200x.png" >
-          </div>
-          <div class="subject-percentage-avatar">
-            <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+91.svg" class="subject-percentage-item-avatar">
-          </div>
-          <div class="subject-score-item">4/5</div>
-        </div>
-        <div class="subject-item">
-          <div class="subject-name">Chemistry</div>
-          <div class="subject-percentage-item">
-            <span class="percentage-value" style="left:40%;">40%</span>
-            <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/PNG/Asset+117@200x.png" >
-          </div>
-          <div class="subject-percentage-avatar">
-            <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+92.svg" class="subject-percentage-item-avatar">
-          </div>
-          <div class="subject-score-item">2/5</div>
-        </div>
-        <div class="subject-item">
-          <div class="subject-name">Biology</div>
-          <div class="subject-percentage-item">
-            <span class="percentage-value" style="left:33%;">33%</span>
-            <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/PNG/Asset+113@200x.png" >
-          </div>
-          <div class="subject-percentage-avatar">
-            <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+92.svg" class="subject-percentage-item-avatar">
-          </div>
-          <div class="subject-score-item">1/3</div>
-        </div>
-    </div>
     </section>
 
-    <!-- unit analysis -->
-    <div class="unit-analysis">
-      <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+107.svg" class="unit-analysis-img">
-      <div class="unit-analysis-text">
-        Tarun seems to have aced mathematics concepts like Number sense, Measurements. Good going! That’ll be useful this year in mastering Mathematics!
+    <!-- unit wise gap analysis page -->
+    <section class="first-page page unit-gap-page">
+      <section class="student-report-title-container">
+        <span class="first-heading"> Unit-wise Gap Analysis </span>
+      </section>
+      <hr class="unit-wise-analysis-hr" />
+      <div class="score-title">
+        <span class="score-title-text"> score </span>
       </div>
-    </div>
+      <section class="unit-gap-analysis-section">
+        <div class="unit-subject-card">
+          <img
+            src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+120.svg"
+          />
+          <span class="unit-subject-card-title"> Mathematics </span>
+        </div>
 
-    <!-- unit gap problem section -->
-    <div class="unit-gap-problem-section">
-      <img src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+110.svg">
-      <div class="unit-gap-problem-text-container">
-        <h4 class="unit-gap-problem-title">
-          What next? 
-        </h4>
-        <p class="unit-gap-problem-text">As you can see, there are many topics where we have identified gaps. Tarun has a
-          significant gap in Food from plants, Animals, and Human body and a moderate gap
-          in Fractions and Forms of matter. These gaps might interfere with learning
-          science and mathematics in the current grade.</p>
+        <div class="unit-subject-details">
+          <div class="subject-item">
+            <div class="subject-name">Geometry</div>
+            <div class="subject-percentage-item">
+              <span class="percentage-value" style="left: 70%">70%</span>
+              <img
+                src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/PNG/Asset+112@200x.png"
+              />
+            </div>
+            <div class="subject-percentage-avatar">
+              <img
+                src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+91.svg"
+                class="subject-percentage-item-avatar"
+              />
+            </div>
+            <div class="subject-score-item">3/4</div>
+          </div>
+          <div class="subject-item">
+            <div class="subject-name">Numbers</div>
+            <div class="subject-percentage-item">
+              <span class="percentage-value" style="left: 40%">40%</span>
+              <img
+                src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/PNG/Asset+117@200x.png"
+              />
+            </div>
+            <div class="subject-percentage-avatar">
+              <img
+                src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+92.svg"
+                class="subject-percentage-item-avatar"
+              />
+            </div>
+            <div class="subject-score-item">2/5</div>
+          </div>
+          <div class="subject-item">
+            <div class="subject-name">Algebra</div>
+            <div class="subject-percentage-item">
+              <span class="percentage-value" style="left: 20%">20%</span>
+              <img
+                src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/PNG/Asset+114@200x.png"
+              />
+            </div>
+            <div class="subject-percentage-avatar">
+              <img
+                src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+92.svg"
+                class="subject-percentage-item-avatar"
+              />
+            </div>
+            <div class="subject-score-item">1/5</div>
+          </div>
+          <div class="subject-item">
+            <div class="subject-name">Statistics</div>
+            <div class="subject-percentage-item">
+              <span class="percentage-value" style="left: 33%">33%</span>
+              <img
+                src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/PNG/Asset+113@200x.png"
+              />
+            </div>
+            <div class="subject-percentage-avatar">
+              <img
+                src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+92.svg"
+                class="subject-percentage-item-avatar"
+              />
+            </div>
+            <div class="subject-score-item">1/3</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- unit analysis -->
+      <div class="unit-analysis">
+        <img
+          src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+107.svg"
+          class="unit-analysis-img"
+        />
+        <div class="unit-analysis-text">
+          Tarun seems to have aced mathematics concepts like Number sense,
+          Measurements. Good going! That’ll be useful this year in mastering
+          Mathematics!
+        </div>
       </div>
-    </div>
-  </section>
 
-</body>
+      <!-- science section -->
+      <div class="score-title">
+        <span class="score-title-text"> score </span>
+      </div>
+      <section class="unit-gap-analysis-section">
+        <div class="unit-subject-card">
+          <img
+            src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+119.svg"
+          />
+          <span class="unit-subject-card-title"> Science </span>
+        </div>
+        <div class="unit-subject-details">
+          <div class="subject-item">
+            <div class="subject-name">Physics</div>
+            <div class="subject-percentage-item">
+              <span class="percentage-value" style="left: 80%">80%</span>
+              <img
+                src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/PNG/Asset+116@200x.png"
+              />
+            </div>
+            <div class="subject-percentage-avatar">
+              <img
+                src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+91.svg"
+                class="subject-percentage-item-avatar"
+              />
+            </div>
+            <div class="subject-score-item">4/5</div>
+          </div>
+          <div class="subject-item">
+            <div class="subject-name">Chemistry</div>
+            <div class="subject-percentage-item">
+              <span class="percentage-value" style="left: 40%">40%</span>
+              <img
+                src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/PNG/Asset+117@200x.png"
+              />
+            </div>
+            <div class="subject-percentage-avatar">
+              <img
+                src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+92.svg"
+                class="subject-percentage-item-avatar"
+              />
+            </div>
+            <div class="subject-score-item">2/5</div>
+          </div>
+          <div class="subject-item">
+            <div class="subject-name">Biology</div>
+            <div class="subject-percentage-item">
+              <span class="percentage-value" style="left: 33%">33%</span>
+              <img
+                src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/PNG/Asset+113@200x.png"
+              />
+            </div>
+            <div class="subject-percentage-avatar">
+              <img
+                src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+92.svg"
+                class="subject-percentage-item-avatar"
+              />
+            </div>
+            <div class="subject-score-item">1/3</div>
+          </div>
+        </div>
+      </section>
 
+      <!-- unit analysis -->
+      <div class="unit-analysis">
+        <img
+          src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+107.svg"
+          class="unit-analysis-img"
+        />
+        <div class="unit-analysis-text">
+          Tarun seems to have aced mathematics concepts like Number sense,
+          Measurements. Good going! That’ll be useful this year in mastering
+          Mathematics!
+        </div>
+      </div>
+
+      <!-- unit gap problem section -->
+      <div class="unit-gap-problem-section">
+        <img
+          src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/bdt+2.0/All+page+assets+PNGs+%26+SVGs/Page+4/SVG/Asset+110.svg"
+        />
+        <div class="unit-gap-problem-text-container">
+          <h4 class="unit-gap-problem-title">What next?</h4>
+          <p class="unit-gap-problem-text">
+            As you can see, there are many topics where we have identified gaps.
+            Tarun has a significant gap in Food from plants, Animals, and Human
+            body and a moderate gap in Fractions and Forms of matter. These gaps
+            might interfere with learning science and mathematics in the current
+            grade.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
