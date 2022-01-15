@@ -29,18 +29,15 @@ const compileHTML = async() => {
   const bdtTemplate = fs.readFileSync(main, "utf-8");
   const template = hbs.handlebars.compile(bdtTemplate);
   const html = template(sampleData);
-  await fs.writeFileSync('hello.html',html, {
-    encoding:'utf-8'
-  })
   const browser = await puppeteer.launch({
     args: ["--no-sandbox"],
     headless: true,
     devtools: false,
   });
   var page = await browser.newPage();
-  page.setContent(html);
+  await page.setContent(html);
   await page.evaluateHandle("document.fonts.ready");
-  await page.waitForNetworkIdle({idleTime:3000, timeout:10000})
+  await page.waitForNetworkIdle({idleTime:3000})
   await page.pdf(options);
   await browser.close();  
 };
