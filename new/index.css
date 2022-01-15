@@ -75,6 +75,10 @@ section {
   display: flex;
   align-items: left;
 }
+.centerAlign {
+  text-align: center;
+}
+
 .divider {
   height: 2px;
   background-color: white;
@@ -103,7 +107,7 @@ section {
   background: linear-gradient(180deg, #8a4493 0%, rgba(255, 255, 255, 0) 100%);
   padding: 30px;
   border-radius: 30px;
-  margin: 30px 100px;
+  margin: 20px 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
