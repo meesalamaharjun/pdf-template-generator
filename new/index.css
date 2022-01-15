@@ -45,6 +45,10 @@ section {
   margin: 0px;
 }
 
+.description-2 {
+  font-size: 20px; 
+}
+
 .boldText1 {
   font-size: 24px;
   font-weight: bold;
@@ -63,7 +67,14 @@ section {
   display: flex;
   justify-content: space-between;
 }
-
+.spaceAround {
+  display: flex;
+  justify-content: space-around;
+}
+.alignLeft{
+  display: flex;
+  align-items: left;
+}
 .divider {
   height: 2px;
   background-color: white;
@@ -71,10 +82,59 @@ section {
   width: 90%;
   margin: 20px 30px;
 }
-
+.flexDirectionRow{
+  display: flex;
+  flex-direction: row;
+}
+.flexDirectionCol{
+  display: flex;
+  flex-direction: column;
+}
 .mt20 {
   margin-top: 20px;
 }
 .mt40 {
   margin-top: 40px;
+}
+.ml40{
+  margin-left: 40px;
+}
+.mt5{
+  margin-top: 5px;
+}
+.ml25{
+  margin-left: 25px;
+}
+.subtitle-2{
+  font-size: 27px;
+  font-weight: bold;
+  margin: 0px;
+}
+.title-underline{
+  width:75%;
+  padding:1px;
+  background-color: rgb(144, 89, 167);
+  margin-top: 6px;
+}
+.title-adjustment{
+  padding: 40px 0px 0px 40px;
+}
+.title-underline-adjustment{
+  margin:6px 0px 0px 40px;
+}
+.description-container{
+  width: 67%;
+  margin: 70px 0px 0px 145px;
+  height:700px;
+}
+.content-container{
+  width:85%;
+  height:800px;
+}
+.unit-container{
+  width:100%;
+}
+.last-page-content-container{
+  width:90%;
+  height:850px;
 }
