@@ -130,6 +130,16 @@ section {
   border-radius: 20px;
   margin-top: 30px;
 }
+.card-v2 {
+  min-height: 150px;
+  min-width: 150px;
+  text-align: center;
+  padding: 20px;
+  display: inline-block;
+  background-color: #645184;
+  border-radius: 20px;
+  margin-top: 30px;
+}
 
 .cardImage {
   width: 100px;
