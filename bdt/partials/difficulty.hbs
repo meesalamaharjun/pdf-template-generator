@@ -1,0 +1,108 @@
+<section>
+  {{#with difficulty}}
+    <p class="title">Difficulty and Skill Analysis</p>
+    <div class="divider"></div>
+    <p class="subtitle"></p>
+    <div class="justifyCenter">
+      {{#each difficulty}}
+        <div class="donutContainer">
+          <p class="smallDescription">Score</p>
+          <p class="subtitle-2">{{score}}/{{total}}</p>
+          <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(81,81)">
+              <text
+                alignment-baseline="middle"
+                dominant-baseline="middle"
+                text-anchor="middle"
+                style="color: white"
+                class="svgText"
+                fill="white"
+              >
+                {{percentage}}%
+              </text>
+              <circle
+                id="circle"
+                style="stroke-dashoffset: 0; stroke-opacity: 0.7"
+                class="donut"
+                r="69.85699"
+                stroke-width="14"
+                stroke="#E06B39"
+                fill="none"
+              ></circle>
+              <circle
+                id="circle"
+                style="stroke-dashoffset: 60; stroke-linecap: round"
+                class="donut"
+                r="69.85699"
+                stroke-width="6"
+                stroke="#ffffff"
+                fill="none"
+              ></circle>
+            </g>
+          </svg>
+          <p class="description" style="margin-top: 5px">{{title}}</p>
+        </div>
+      {{/each}}
+    </div>
+    <div class="banner" style="margin: 20px">
+      <img class="hornImage" src="/stylesheets/assets/horn.png" />
+      <p class="description">
+        {{difficulty_message}}
+      </p>
+    </div>
+    <p class="subtitle">Skill-wise accuracy</p>
+    {{log "this is the skill" this}}
+    <div class="justifyCenter">
+      {{#each skill}}
+        <div class="donutContainer">
+          <p class="smallDescription">Score</p>
+          <p class="subtitle-2">{{score}}/{{total}}</p>
+          <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(81,81)">
+              <text
+                alignment-baseline="middle"
+                dominant-baseline="middle"
+                text-anchor="middle"
+                style="color: white"
+                class="svgText"
+                fill="white"
+              >
+                {{percentage}}%
+              </text>
+              <circle
+                id="circle"
+                style="stroke-dashoffset: 0; stroke-opacity: 0.7"
+                class="donut"
+                r="69.85699"
+                stroke-width="14"
+                stroke="#E06B39"
+                fill="none"
+              ></circle>
+              <circle
+                id="circle"
+                style="stroke-dashoffset: 60; stroke-linecap: round"
+                class="donut"
+                r="69.85699"
+                stroke-width="6"
+                stroke="#ffffff"
+                fill="none"
+              ></circle>
+            </g>
+          </svg>
+          <p class="description" style="margin-top: 5px">{{title}}</p>
+        </div>
+      {{/each}}
+    </div>
+    <div class="banner" style="margin: 20px">
+      <img class="hornImage" src="/stylesheets/assets/horn.png" />
+      <p class="description">
+        {{skill_message}}
+      </p>
+    </div>
+    <div class="callout" style="margin: 80px 20px">
+      We understand that inconsistent learning habits during the pandemic seem
+      to have taken a toll on Tarun’s comprehensive conceptual understanding and
+      ability to apply those to challenging situations
+    </div>
+  {{/with}}
+</section>

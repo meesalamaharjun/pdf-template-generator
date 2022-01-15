@@ -1,0 +1,72 @@
+<section>
+  {{#with overall}}
+    <p class="title">Overall Analysis</p>
+    <div class="mt40">
+      <div class="spaceBetween" style="align-items: center">
+        <div>
+          <p>Date of Test</p>
+          <p class="subtitle">{{test_date}}</p>
+        </div>
+        <div>
+          <p>Overall Assessment</p>
+          <p class="boldText1">{{result_text}}</p>
+          <p>IDENTIFIED</p>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="spaceBetween">
+      <div class="centerAlign">
+        <p>Overall Percentage</p>
+        <p class="subtitle">{{overall_percentage}}%</p>
+      </div>
+      <div class="centerAlign">
+        <p>Questions Correct</p>
+        <p class="subtitle">{{questions_correct}}/{{total_questions}}</p>
+      </div>
+      <div class="centerAlign">
+        <p>Questions attempted</p>
+        <p class="subtitle">{{questions_attempted}}/{{total_questions}}</p>
+      </div>
+      <div class="centerAlign">
+        <p>Total time taken</p>
+        <p class="subtitle">{{total_time}}</p>
+      </div>
+    </div>
+    <div class="banner">
+      <img src="stylesheets/assets/horn.png" class="hornImage" />
+      <p class="description">
+        {{overall_message}}
+      </p>
+    </div>
+    <div class="divider"></div>
+    <p class="subtitle">Subject-wise Analysis:</p>
+    <div class="spaceAround">
+      {{#each subjects}}
+        <div class="card">
+          <img src="stylesheets/assets/math.png" class="cardImage" />
+          <div>
+            <p>{{title}}</p>
+            <div class="divider" style="margin: 30px 0px;width:100%"></div>
+            <p class="subtitle">{{percentage}}%</p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <div class="banner">
+      <img src="stylesheets/assets//horn.png" class="hornImage" />
+      <div>
+        <p>
+          {{subject_message}}
+        </p>
+      </div>
+    </div>
+    <div class="callout">
+      <p>What next?</p>
+      <p class="description">
+        Let’s see what critical concepts were assessed in this test, and how it
+        might impact Tarun’s learning this year
+      </p>
+    </div>
+  {{/with}}
+</section>

@@ -1,0 +1,52 @@
+<section>
+  {{#with unitWise}}
+    <p class="title">Unit-wise Gap Analysis</p>
+    <div class="divider"></div>
+    <div>
+      {{#each subjects}}
+        <div class="spaceBetween infoContainer">
+          <div class="card-v2">
+            <img src="/stylesheets/assets/math.png" class="cardImage" />
+            <div class="justifyCenter">
+              <div class="divider"></div>
+            </div>
+            <div>
+              <p>{{subject}}</p>
+            </div>
+          </div>
+          <div class="unit-details-container">
+              {{#each concepts}}
+              <div class="grid-container">
+              <div class="grid-child-subject">
+                <p>{{title}}</p>
+              </div>
+              <div class="grid-child-range">
+                  <p class="scoreText">{{score}}%</p>
+                <div class="rangeContainer"></div>
+                <div class="rangeChild" style="width: {{score}}%;"></div>
+              </div>
+              <div class="grid-child-score">
+                <p class="description">{{correct}}/{{total}}</p>
+              </div>
+            </div>
+              {{/each}}
+          </div>
+        </div>
+        <div>
+          <div class="banner">
+            <img src="/stylesheets/assets/horn.png" class="hornImage" />
+            <p class="description">
+                {{message}}
+            </p>
+          </div>
+        </div>
+      {{/each}}
+    <div>
+      <div class="callout">
+        <p class="description">
+            {{unit_message}}
+        </p>
+      </div>
+    </div>
+  {{/with}}
+</section>

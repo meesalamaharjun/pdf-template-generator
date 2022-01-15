@@ -1,0 +1,16 @@
+<section>
+  <p class="title">Tarun's Learning-Gaps Report</p>
+  <div class="divider"></div>
+  <p>{{title}}</p>
+  {{#each learningReport}}
+    <div class="unit-container alignCenter">
+      <img width="105px" height="105px" src="{{icon}}" />
+      <div class="flexDirectionCol alignLeft ml25">
+        <p class="subtitle-2">{{title}}</p>
+        <p class="description mt5">
+          {{description}}
+        </p>
+      </div>
+    </div>
+  {{/each}}
+</section>
