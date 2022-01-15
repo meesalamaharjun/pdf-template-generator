@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "DejaVuSans";
+  src: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/fonts/DejaVuSansCondensed.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "DejaVuSans-bold";
+  src: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/fonts/DejaVuSansCondensed-Bold.ttf")
+    format("truetype");
+}
+
+/* Elements */
+body {
+  width: 868px;
+  margin: 0px;
+  color: white;
+  font-family: "DejaVuSans";
+}
+p {
+  margin: 0px;
+}
+section {
+  background: url(./assets/background.png);
+  background-size: cover;
+  min-height: 1076px;
+  padding: 20px 40px;
+}
+
+/* Text */
+.title {
+  font-size: 54px;
+  font-weight: bold;
+  margin: 0px;
+}
+.scoreText {
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0px;
+}
+.subtitle-2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.description {
+  font-size: 18px;
+  margin: 0px;
+}
+.smallDescription {
+  font-size: 14px;
+}
+
+.description-2 {
+  font-size: 20px;
+}
+
+.boldText1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Flex */
+.justifyCenter {
+  display: flex;
+  justify-content: center;
+}
+.alignCenter {
+  display: flex;
+  align-items: center;
+}
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+.spaceAround {
+  display: flex;
+  justify-content: space-around;
+}
+.alignLeft {
+  display: flex;
+  align-items: left;
+}
+.centerAlign {
+  text-align: center;
+}
+
+.divider {
+  height: 2px;
+  background-color: white;
+  border-radius: 200;
+  width: 90%;
+  margin: 20px 30px;
+  opacity: 0.4;
+}
+.flexDirectionRow {
+  display: flex;
+  flex-direction: row;
+}
+.flexDirectionCol {
+  display: flex;
+  flex-direction: column;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+
+/* Banners */
+.banner {
+  background: linear-gradient(180deg, #8a4493 0%, rgba(255, 255, 255, 0) 100%);
+  padding: 30px;
+  border-radius: 30px;
+  margin: 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.callout {
+  background: linear-gradient(180deg, #8a4493 0%, rgba(255, 255, 255, 0) 100%);
+  padding: 30px;
+  border-radius: 30px;
+  margin: 30px 40px;
+}
+
+.hornImage {
+  width: 60px;
+  margin-right: 30px;
+}
+
+.card {
+  min-height: 200px;
+  min-width: 200px;
+  text-align: center;
+  padding: 30px;
+  display: inline-block;
+  background-color: #645184;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.card-v2 {
+  min-height: 150px;
+  min-width: 150px;
+  text-align: center;
+  padding: 20px;
+  display: inline-block;
+  background-color: #645184;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.cardImage {
+  width: 100px;
+}
+.ml40 {
+  margin-left: 40px;
+}
+.mt5 {
+  margin-top: 5px;
+}
+.ml25 {
+  margin-left: 25px;
+}
+.subtitle-2 {
+  font-size: 27px;
+  font-weight: bold;
+  margin: 0px;
+}
+.title-underline {
+  width: 75%;
+  padding: 1px;
+  background-color: rgb(144, 89, 167);
+  margin-top: 6px;
+}
+.title-adjustment {
+  padding: 40px 0px 0px 40px;
+}
+.title-underline-adjustment {
+  margin: 6px 0px 0px 40px;
+}
+.description-container {
+  width: 67%;
+  margin: 70px 0px 0px 145px;
+  height: 700px;
+}
+.content-container {
+  width: 85%;
+  height: 800px;
+}
+.unit-container {
+  width: 100%;
+}
+.last-page-content-container {
+  width: 90%;
+  height: 850px;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: fit-content;
+}
+
+.grid-child-subject {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.grid-child-range {
+  grid-area: 1 / 2 / 2 / 6;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.grid-child-score {
+  grid-area: 1 / 6 / 2 / 7;
+  text-align: center;
+}
+
+.unit-details-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Range */
+.rangeContainer {
+  width: 100%;
+  height: 10px;
+  border-radius: 20px;
+  background-color: white;
+  opacity: 0.2;
+  position: absolute;
+}
+.rangeChild {
+  position: absolute;
+  width: 40%;
+  height: 6px;
+  padding: 2px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #e99752 0%, #e06b39 100%);
+  z-index: 20;
+}
+
+.infoContainer {
+  margin-top: 60px;
+}
+
+/* Donut */
+.donutContainer {
+  position: relative;
+  float: left;
+  text-align: center;
+  margin: 40px;
+}
+
+svg {
+  transform: rotate(-90deg);
+}
+
+svg text {
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.donut {
+  stroke-dasharray: 440;
+}
+
+.svgText {
+  font-size: 40px;
+  transform: rotate(90deg);
+}
+
+.groupRotate {
+  transform: rotate(0deg);
+}
