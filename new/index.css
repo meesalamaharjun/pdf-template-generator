@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "DejaVuSans";
+  src: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/fonts/DejaVuSansCondensed.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "DejaVuSans-bold";
+  src: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/fonts/DejaVuSansCondensed-Bold.ttf")
+    format("truetype");
+}
+
+body {
+  width: 868px;
+  margin: 0px;
+  color: white;
+  font-family: "DejaVuSans";
+}
+
+section {
+  background: url(./assets/background.png);
+  background-size: cover;
+  height: 1076px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 54px;
+  font-weight: bold;
+  margin: 0px;
+}
