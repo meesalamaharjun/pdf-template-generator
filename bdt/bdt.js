@@ -22,7 +22,8 @@ const registerPartials = () => {
 const compileHTML = async() => {
   const options={
     printBackground:true,
-    path:pdfPath
+    path:pdfPath,
+    height:'2000'
   }
   registerPartials();
   const bdtTemplate = fs.readFileSync(main, "utf-8");
@@ -39,7 +40,7 @@ const compileHTML = async() => {
   var page = await browser.newPage();
   page.setContent(html);
   await page.evaluateHandle("document.fonts.ready");
-  await page.waitFor(6000);
+  await page.waitForNetworkIdle({idleTime:3000, timeout:10000})
   await page.pdf(options);
   await browser.close();  
 };
