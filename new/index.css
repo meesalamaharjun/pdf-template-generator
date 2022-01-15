@@ -24,7 +24,7 @@ section {
   background: url(./assets/background.png);
   background-size: cover;
   height: 1076px;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 /* Text */
@@ -70,6 +70,7 @@ section {
   border-radius: 200;
   width: 90%;
   margin: 20px 30px;
+  opacity: 0.4;
 }
 
 .mt20 {
@@ -77,4 +78,19 @@ section {
 }
 .mt40 {
   margin-top: 40px;
+}
+
+/* Banners */
+.banner {
+  background: linear-gradient(180deg, #8a4493 0%, rgba(255, 255, 255, 0) 100%);
+  padding: 30px;
+  border-radius: 30px;
+  margin: 30px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hornImage {
+  width: 60px;
+  margin-right: 30px;
 }
