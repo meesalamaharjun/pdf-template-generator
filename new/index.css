@@ -46,7 +46,7 @@ section {
 }
 
 .description-2 {
-  font-size: 20px; 
+  font-size: 20px;
 }
 
 .boldText1 {
@@ -71,7 +71,7 @@ section {
   display: flex;
   justify-content: space-around;
 }
-.alignLeft{
+.alignLeft {
   display: flex;
   align-items: left;
 }
@@ -82,11 +82,11 @@ section {
   width: 90%;
   margin: 20px 30px;
 }
-.flexDirectionRow{
+.flexDirectionRow {
   display: flex;
   flex-direction: row;
 }
-.flexDirectionCol{
+.flexDirectionCol {
   display: flex;
   flex-direction: column;
 }
@@ -96,45 +96,45 @@ section {
 .mt40 {
   margin-top: 40px;
 }
-.ml40{
+.ml40 {
   margin-left: 40px;
 }
-.mt5{
+.mt5 {
   margin-top: 5px;
 }
-.ml25{
+.ml25 {
   margin-left: 25px;
 }
-.subtitle-2{
+.subtitle-2 {
   font-size: 27px;
   font-weight: bold;
   margin: 0px;
 }
-.title-underline{
-  width:75%;
-  padding:1px;
+.title-underline {
+  width: 75%;
+  padding: 1px;
   background-color: rgb(144, 89, 167);
   margin-top: 6px;
 }
-.title-adjustment{
+.title-adjustment {
   padding: 40px 0px 0px 40px;
 }
-.title-underline-adjustment{
-  margin:6px 0px 0px 40px;
+.title-underline-adjustment {
+  margin: 6px 0px 0px 40px;
 }
-.description-container{
+.description-container {
   width: 67%;
   margin: 70px 0px 0px 145px;
-  height:700px;
+  height: 700px;
 }
-.content-container{
-  width:85%;
-  height:800px;
+.content-container {
+  width: 85%;
+  height: 800px;
 }
-.unit-container{
-  width:100%;
+.unit-container {
+  width: 100%;
 }
-.last-page-content-container{
-  width:90%;
-  height:850px;
+.last-page-content-container {
+  width: 90%;
+  height: 850px;
 }
