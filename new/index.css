@@ -29,3 +29,17 @@ section {
   font-weight: bold;
   margin: 0px;
 }
+
+/* Flex */
+.justifyCenter {
+  display: flex;
+  justify-content: center;
+}
+.alignCenter {
+  display: flex;
+  align-items: center;
+}
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
