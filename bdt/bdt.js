@@ -45,6 +45,7 @@ const compileHTML = async () => {
   const options = {
     printBackground: true,
     path: pdfPath,
+    height:'1060'
   };
   const gradeImages = getGradeImages(sampleData.grade);
   console.log("Registering the partials");
