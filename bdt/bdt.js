@@ -37,7 +37,6 @@ const compileHTML = async() => {
   var page = await browser.newPage();
   await page.setContent(html);
   await page.evaluateHandle("document.fonts.ready");
-  await page.waitForNetworkIdle({idleTime:3000})
   await page.pdf(options);
   await browser.close();  
 };
