@@ -7,7 +7,7 @@
       {{#each difficulty}}
         <div class="donutContainer">
           <p class="smallDescription">Score</p>
-          <p class="subtitle-2">{{score}}/{{total}}</p>
+          <p class="subtitle-2">{{percentage_score}}/{{total}}</p>
           <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(81,81)">
               <text
@@ -31,7 +31,8 @@
               ></circle>
               <circle
                 id="circle"
-                style="stroke-dashoffset: 60; stroke-linecap: round"
+                style="stroke-linecap: round"
+                stroke-dashoffset={{scoreCircleOffset percentage}}
                 class="donut"
                 r="69.85699"
                 stroke-width="6"
@@ -45,17 +46,19 @@
       {{/each}}
     </div>
     <div class="banner" style="margin: 20px">
-      <img class="hornImage" src="./stylesheets/assets/horn.png" />
+      <img class="hornImage" src="https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/horn.png" />
       <p class="description">
-        {{difficulty_message}}
+        {{message}}
       </p>
     </div>
+    {{/with}}
+    {{#with skill}}
     <p class="subtitle">Skill-wise accuracy</p>
     <div class="justifyCenter">
       {{#each skill}}
         <div class="donutContainer">
           <p class="smallDescription">Score</p>
-          <p class="subtitle-2">{{score}}/{{total}}</p>
+          <p class="subtitle-2">{{percentage_score}}/{{total}}</p>
           <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(81,81)">
               <text
@@ -79,7 +82,8 @@
               ></circle>
               <circle
                 id="circle"
-                style="stroke-dashoffset: 60; stroke-linecap: round"
+                style="stroke-linecap: round"
+                stroke-dashoffset={{scoreCircleOffset percentage}}
                 class="donut"
                 r="69.85699"
                 stroke-width="6"
@@ -93,14 +97,14 @@
       {{/each}}
     </div>
     <div class="banner" style="margin: 20px">
-      <img class="hornImage" src="./stylesheets/assets/horn.png" />
+      <img class="hornImage" src="https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/horn.png" />
       <p class="description">
-        {{skill_message}}
+        {{@root.skill.message}}
       </p>
     </div>
     <div class="callout" style="margin: 80px 20px">
       We understand that inconsistent learning habits during the pandemic seem
-      to have taken a toll on Tarun’s comprehensive conceptual understanding and
+      to have taken a toll on {{@root.full_name}}’s comprehensive conceptual understanding and
       ability to apply those to challenging situations
     </div>
   {{/with}}
