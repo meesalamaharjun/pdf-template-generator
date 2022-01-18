@@ -27,11 +27,10 @@
                             <p>{{title}}</p>
                         </div>
                         <div class="grid-child-range">
-                            <p class="scoreText" style="left:{{progressTextPosition percentage_score}}%;">
-                                {{percentage_score}}%</p>
-                            <div class="rangeContainer"></div>
-                            <div class="rangeChild {{progressBarGradient percentage_score}}"
-                                style="width: {{progressBarWidth percentage_score}}%; left: {{progressBarOffset percentage_score}}%">
+                            <p class="scoreText" style="left:{{progressTextPosition percentage}}%;">
+                                {{percentage}}%</p>
+                            <div class="rangeContainer {{progressBarGradient percentage}}"></div>
+                            <div class="rangeChild" style="width: {{percentage}}%; ">
                             </div>
                         </div>
                         <div class="grid-child-score">
@@ -43,12 +42,14 @@
             </div>
         </div>
         <div>
+            {{#if message}}
             <div class="banner">
                 <img src="https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/horn.png" class="hornImage" />
                 <p class="description">
                     {{message}}
                 </p>
             </div>
+            {{/if}}
         </div>
         {{/each}}
         <div>

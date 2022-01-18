@@ -1,70 +1,69 @@
 {
-    "section_images": {
-      "4": [
-        "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-4/first.png",
-        "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-4/second.png"
-      ],
-      "5": [
-        "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-5/first.png",
-        "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-5/second.png"
-      ],
-      "6": [
-        "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-6/first.png",
-        "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-6/second.png"
-      ],
-      "7": [
-        "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-7/first.png",
-        "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-7/second.png"
-      ],
-      "8": [
-        "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-8/first.png",
-        "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-8/second.png"
-      ],
-      "9": [
-        "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-9/first.png",
-        "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-9/second.png"
-      ],
-      "10": [
-        "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-10/first.png",
-        "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-10/second.png"
-      ]
-    },
-    "learning-report-data": [
-      {
-        "id": 2,
-        "title": "Overall and subject-wise gap analysis",
-        "description": "Highlights of test performance and overall gaps identified",
-        "icon": "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/overall.png"
-      },
-  
-      {
-        "id": 3,
-        "title": "Unit-wise Gap-Analysis",
-        "description": "Learning gaps and strengths across units in Science and Mathematics",
-        "icon": "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/unit-wise.png"
-      },
-      {
-        "id": 4,
-        "title": "Skill Gap and Difficulty based Analysis",
-        "description": "Accuracy-based feedback on conceptual understanding and application skills, as well as across difficulty levels",
-        "icon": "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/skill-wise.png"
-      },
-      {
-        "id": 7,
-        "title": "Question-wise deep-dive",
-        "description": "Concept connections and learning deficiencies identified on the basis of each wrong answer made by the student",
-        "icon": "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/question-wise.png"
-      },
-      {
-        "id": 6,
-        "title": "Remedial options",
-        "description": "The Bridge Course for the student - built around the two-teacher model as guided learning sessions targeting the gap-areas",
-        "icon": "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/remedial.png"
-      }
+  "section_images": {
+    "4": [
+      "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-4/first.png",
+      "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-4/second.png"
     ],
-    "subject_icons": {
-      "Mathematics": "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/math.png",
-      "Science": "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/physics.png"
+    "5": [
+      "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-5/first.png",
+      "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-5/second.png"
+    ],
+    "6": [
+      "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-6/first.png",
+      "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-6/second.png"
+    ],
+    "7": [
+      "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-7/first.png",
+      "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-7/second.png"
+    ],
+    "8": [
+      "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-8/first.png",
+      "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-8/second.png"
+    ],
+    "9": [
+      "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-9/first.png",
+      "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-9/second.png"
+    ],
+    "10": [
+      "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-10/first.png",
+      "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/sections/Images/grade-10/second.png"
+    ]
+  },
+  "learning-report-data": [
+    {
+      "id": 2,
+      "title": "Overall and subject-wise gap analysis",
+      "description": "Highlights of test performance and overall gaps identified",
+      "icon": "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/overall.png"
+    },
+
+    {
+      "id": 3,
+      "title": "Unit-wise Gap-Analysis",
+      "description": "Learning gaps and strengths across units in Science and Mathematics",
+      "icon": "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/unit-wise.png"
+    },
+    {
+      "id": 4,
+      "title": "Skill Gap and Difficulty based Analysis",
+      "description": "Accuracy-based feedback on conceptual understanding and application skills, as well as across difficulty levels",
+      "icon": "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/skill-wise.png"
+    },
+    {
+      "id": 7,
+      "title": "Question-wise deep-dive",
+      "description": "Concept connections and learning deficiencies identified on the basis of each wrong answer made by the student",
+      "icon": "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/question-wise.png"
+    },
+    {
+      "id": 6,
+      "title": "Remedial options",
+      "description": "The Bridge Course for the student - built around the two-teacher model as guided learning sessions targeting the gap-areas",
+      "icon": "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/remedial.png"
     }
+  ],
+  "subject_icons": {
+    "Mathematics": "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/math.png",
+    "Science": "https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/physics.png"
   }
-  
+}

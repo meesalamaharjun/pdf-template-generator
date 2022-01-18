@@ -1,5 +1,4 @@
 const staticData = require("../data/static.json");
-
 function scoreCircleOffset(percentage) {
   const offsetValueFromPercentage = percentage * (440 / 100);
   return 440 - offsetValueFromPercentage;
@@ -34,18 +33,6 @@ function formatDate(dateString) {
   return `${formatOrdinals(day)} ${month}`;
 }
 
-function progressBarOffset(percentage) {
-  let parsedPercentage = parseInt(percentage, 10);
-  if (parsedPercentage === 100) return 0;
-  return parsedPercentage;
-}
-
-function progressBarWidth(percentage) {
-  let parsedPercentage = parseInt(percentage, 10);
-  if (parsedPercentage === 100) return 100;
-  return 100 - parsedPercentage;
-}
-
 function progressBarGradient(score) {
   let parsedScore = parseInt(score, 10);
   if (parsedScore <= 50) return "rangePoor";
@@ -60,33 +47,36 @@ function progressTextPosition(percentage) {
 
 const getGradeImages = (grade) => {
   return {
-    first: staticData.section_images[grade][0],
-    second: staticData.section_images[grade][1],
+    "first":staticData.section_images[grade][0],
+    "second":staticData.section_images[grade][1],
   };
 };
 
-const getSubjectIcon = (subject) => {
+const getSubjectIcon=(subject)=>{
   return staticData.subject_icons[subject];
-};
+}
 
-const getGapText = (score) => {
-  if (score > 0 && score <= 50) {
-    return "SIGNIFICANT GAP";
-  } else if (score > 50 && score <= 80) {
-    return "MODERATE GAP";
-  } else if (score > 80 && score <= 100) {
-    return "LOW GAP";
+
+const getGapText=(score)=>{
+  if(score>0&&score<=50){
+    return "SIGNIFICANT GAP"
   }
-};
+  else if(score>50&&score<=80){
+    return "MODERATE GAP"
+  }
+  else if(score>80&&score<=100){
+    return "LOW GAP"
+  }
+}
+
+
 
 module.exports = {
   scoreCircleOffset,
   getSubjectIcon,
   formatDate,
-  progressBarOffset,
-  progressBarWidth,
   progressBarGradient,
   progressTextPosition,
   getGradeImages,
-  getGapText,
+  getGapText
 };

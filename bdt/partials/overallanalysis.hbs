@@ -33,12 +33,14 @@
             <p class="subtitle">{{total_time}}</p>
         </div>
     </div>
+    {{#if overall_message}}
     <div class="banner">
         <img src="https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/horn.png" class="hornImage" />
         <p class="description">
             {{overall_message}}
         </p>
     </div>
+    {{/if}}
     <div class="divider"></div>
     <p class="subtitle">Subject-wise Analysis:</p>
     <div class="spaceAround">
@@ -59,6 +61,7 @@
         </div>
         {{/each}}
     </div>
+    {{#if subject_message}}
     <div class="banner">
         <img src="https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/horn.png" class="hornImage" />
         <div>
@@ -67,6 +70,7 @@
             </p>
         </div>
     </div>
+    {{/if}}
     <div class="callout">
       <p>What next?</p>
       <p class="description">

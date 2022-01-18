@@ -34,25 +34,25 @@
         "concepts": [
           {
             "title": "Geometry",
-            "percentage_score": "70",
+            "percentage": "70",
             "total": "4",
             "correct": "3"
           },
           {
             "title": "Math",
-            "percentage_score": "60",
+            "percentage": "60",
             "total": "4",
             "correct": "2"
           },
           {
             "title": "Physics",
-            "percentage_score": "40",
+            "percentage": "40",
             "total": "4",
             "correct": "1"
           },
           {
             "title": "Chemistry",
-            "percentage_score": "20",
+            "percentage": "20",
             "total": "4",
             "correct": "1"
           }
@@ -64,19 +64,19 @@
         "concepts": [
           {
             "title": "Physics",
-            "percentage_score": "80",
+            "percentage": "80",
             "total": "5",
             "correct": "4"
           },
           {
             "title": "Chemistry",
-            "percentage_score": "100",
+            "percentage": "100",
             "total": "5",
             "correct": "2"
           },
           {
             "title": "Biology",
-            "percentage_score": "10",
+            "percentage": "10",
             "total": "5",
             "correct": "1"
           }
@@ -89,19 +89,19 @@
     "difficulty": [
       {
         "title": "Easy",
-        "percentage_score": "1",
+        "score": "1",
         "total": "5",
         "percentage": "20"
       },
       {
         "title": "Medium",
-        "percentage_score": "3",
+        "score": "3",
         "total": "10",
         "percentage": "33"
       },
       {
         "title": "Hard",
-        "percentage_score": "0.5",
+        "score": "0.5",
         "total": "5",
         "percentage": "10"
       }
@@ -112,13 +112,13 @@
     "skill": [
       {
         "title": "Application",
-        "percentage_score": "3",
+        "score": "3",
         "total": "10",
         "percentage": "33"
       },
       {
         "title": "Conceptual Understanding",
-        "percentage_score": "1.5",
+        "score": "1.5",
         "total": "10",
         "percentage": "15"
       }
