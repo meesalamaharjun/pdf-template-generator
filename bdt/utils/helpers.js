@@ -48,7 +48,7 @@ function progressBarGradient(score) {
 
 function progressTextPosition(percentage) {
   let parsedPercentage = parseInt(percentage, 10);
-  return parsedPercentage ? parsedPercentage - 8 : 0;
+  return parsedPercentage > 8 ? parsedPercentage - 8 : parsedPercentage;
 }
 
 const getGradeImages = (grade) => {
