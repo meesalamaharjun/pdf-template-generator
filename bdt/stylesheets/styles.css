@@ -23,10 +23,16 @@ p {
 section {
   background: url(https://dx5zlk5th4g9t.cloudfront.net/bdt2.0-assets/background.png);
   background-size: cover;
-  min-height: 1200px;
+  min-height: 1296px;
   padding: 20px 40px;
 }
-
+.bottom-messages{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+}
 /* Text */
 .title {
   font-size: 54px;
@@ -52,7 +58,7 @@ section {
 }
 
 .description {
-  font-size: 18px;
+  font-size: 17px;
   margin: 0px;
 }
 .smallDescription {
