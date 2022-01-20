@@ -1,4 +1,5 @@
 const compileHTML = require("./bdt/bdt");
+const path=require('path');
 
 
 compileHTML().then(data=>{
@@ -6,4 +7,4 @@ compileHTML().then(data=>{
 })
 .catch(err=>{
     console.log("Something went wrong",err)
-})
+}) 
