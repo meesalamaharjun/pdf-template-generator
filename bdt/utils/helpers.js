@@ -4,6 +4,12 @@ function scoreCircleOffset(percentage) {
   return 440 - offsetValueFromPercentage;
 }
 
+
+function roundIt(percentage) {
+  return +(percentage).toFixed(2);
+}
+
+
 function formatDate(dateString) {
   var pr = new Intl.PluralRules("en-GB", { type: "ordinal" });
 
@@ -42,7 +48,7 @@ function progressBarGradient(score) {
 
 function progressTextPosition(percentage) {
   let parsedPercentage = parseInt(percentage, 10);
-  return parsedPercentage - 8;
+  return parsedPercentage ? parsedPercentage - 8 : 0;
 }
 
 const getGradeImages = (grade) => {
@@ -78,5 +84,6 @@ module.exports = {
   progressBarGradient,
   progressTextPosition,
   getGradeImages,
-  getGapText
+  getGapText,
+  roundIt
 };

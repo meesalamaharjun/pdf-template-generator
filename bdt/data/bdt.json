@@ -1,127 +1,158 @@
 {
-  "assignment_id": "4d7868e1-4c4f-4221-83d8-d4e30dd1eb1f",
-  "assessment_id": "d7488775-51dd-4440-a136-329ee1561f28",
-  "assessment_date": "06/12/2021",
+  "assignment_id": "1659bcd8-6bc9-4c2a-af8e-8dc815e7a120",
+  "assessment_id": "55477623-ecaf-46b1-b7e3-ba9a1df8925e",
+  "assessment_date": "02/12/2021",
   "assessment_type": "LearningLoss",
-  "grade": "10",
-  "full_name": "Asma Anjum",
+  "grade": "9",
+  "full_name": "Vamshi Chennoju",
   "overall": {
-    "test_date": "6th Jan",
-    "overall_percentage": "16",
-    "questions_correct": "5",
-    "questions_attempted": "30",
-    "total_questions": "30",
-    "total_time": "7min 20sec",
-    "overall_message": "Tarun has shown good confidence by attempting most questions in the stipulated time.",
-    "subject_message": "Tarun has shown good competence with a few concepts in Physics and Geometry. Not all questions in the test were attempted - this raises concerns about Tarun’s overall learning.",
+    "total_time": "2 mins",
+    "questions_correct": 11,
+    "questions_attempted": 30,
+    "total_questions": 30,
+    "overall_percentage": 36.67,
+    "test_date": "02/12/2021",
+    "overall_message": "Vamshi Chennoju has shown good confidence by attempting most questions in the stipulated time.",
+    "subject_message": "Vamshi Chennoju has shown good competence with a few hard and medium concepts in Algebra, Statistics, Sample Unit #2, Sample Unit #2, Calculus. Not all questions in the test were attempted - this raises questions about Vamshi Chennoju overall learning.",
     "subjects": [
       {
-        "title": "Mathematics",
-        "percentage": "41"
+        "title": "Science",
+        "percentage": 40.0
       },
       {
-        "title": "Science",
-        "percentage": "53"
+        "title": "Mathematics",
+        "percentage": 33.33
       }
     ]
   },
   "unitWise": {
-    "unit_message": "As you can see, there are many topics where we have identified gaps. Tarun has a significant gap in Food from plants, Animals, and Human body and a moderate gap in Fractions and Forms of matter. These gaps might interfere with learning science and mathematics in the current grade.",
+    "unit_message": "As you can see, there are many topics where we have identified gaps. Vamshi Chennoju has a significant gap in a few concepts in Sample Unit #2, Algebra, Statistics, Calculus, Unitsample, TrignometryThese gaps might interfere with learning science and mathematics in the current grade.",
     "subjects": [
       {
-        "title": "Mathematics",
-        "message": "Tarun seems to have aced mathematics concepts like Number sense, Measurements. Good going! That’ll be useful this year in mastering Mathematics!",
+        "title": "Science",
+        "attempted": 25,
+        "correct": 6,
+        "total_questions": 15,
+        "percentage": 40.0,
         "concepts": [
           {
-            "title": "Geometry",
-            "percentage": "70",
-            "total": "4",
-            "correct": "3"
+            "title": "Sample Unit #2",
+            "percentage": 50.0,
+            "correct": 2.0,
+            "total": 4.0,
+            "questions": 4
           },
           {
-            "title": "Math",
-            "percentage": "60",
-            "total": "4",
-            "correct": "2"
+            "title": "Physical Phenomena",
+            "percentage": 0.0,
+            "correct": 0.0,
+            "total": 1.0,
+            "questions": 1
           },
           {
-            "title": "Physics",
-            "percentage": "40",
-            "total": "4",
-            "correct": "1"
+            "title": "Algebra",
+            "percentage": 75.0,
+            "correct": 3.0,
+            "total": 4.0,
+            "questions": 4
           },
           {
-            "title": "Chemistry",
-            "percentage": "20",
-            "total": "4",
-            "correct": "1"
+            "title": "Statistics",
+            "percentage": 16.666666666666664,
+            "correct": 1.0,
+            "total": 6.0,
+            "questions": 6
           }
-        ]
+        ],
+        "message": ""
       },
       {
-        "title": "Science",
-        "message": "Tarun seems to have aced science concepts like Force and Forms of matter. That makes us confident that Tarun is closer to mastering science!",
+        "title": "Mathematics",
+        "attempted": 24,
+        "correct": 5,
+        "total_questions": 15,
+        "percentage": 33.33,
         "concepts": [
           {
-            "title": "Physics",
-            "percentage": "80",
-            "total": "5",
-            "correct": "4"
+            "title": "Calculus",
+            "percentage": 50.0,
+            "correct": 2.0,
+            "total": 4.0,
+            "questions": 4
           },
           {
-            "title": "Chemistry",
-            "percentage": "100",
-            "total": "5",
-            "correct": "2"
+            "title": "Unitsample",
+            "percentage": 25.0,
+            "correct": 1.0,
+            "total": 4.0,
+            "questions": 4
           },
           {
-            "title": "Biology",
-            "percentage": "10",
-            "total": "5",
-            "correct": "1"
+            "title": "Trignometry",
+            "percentage": 50.0,
+            "correct": 1.0,
+            "total": 2.0,
+            "questions": 2
           }
-        ]
+        ],
+        "message": ""
       }
     ]
   },
+  "strengths": [],
+  "weakness": [
+    "Sample Unit #2",
+    "Algebra",
+    "Statistics",
+    "Calculus",
+    "Unitsample",
+    "Trignometry"
+  ],
+  "opportunities": [],
   "difficulty": {
-    "message": "Tarun has done well with medium / hard concepts in Forms of matter and Measurements. We do notice gaps in Biology and Algebra. Tarun needs to start with easy concepts and work his way upwards to hard ones.",
     "difficulty": [
       {
-        "title": "Easy",
-        "score": "1",
-        "total": "5",
-        "percentage": "20"
+        "title": "HARD",
+        "score": 2.0,
+        "total": 6.0,
+        "percentage": 33.33333333333333
       },
       {
-        "title": "Medium",
-        "score": "3",
-        "total": "10",
-        "percentage": "33"
+        "title": "EASY",
+        "score": 5.0,
+        "total": 9.0,
+        "percentage": 55.55555555555556
       },
       {
-        "title": "Hard",
-        "score": "0.5",
-        "total": "5",
-        "percentage": "10"
+        "title": "MEDIUM",
+        "score": 4.0,
+        "total": 15.0,
+        "percentage": 26.666666666666668
       }
-    ]
+    ],
+    "message": "Vamshi Chennoju has done well with a few hard and medium concepts in Algebra, Statistics, Sample Unit #2, Sample Unit #2, Calculus. We do notice gaps in a few concepts in Algebra, Statistics, Sample Unit #2, , Unitsample, Calculus, Trignometry. Vamshi Chennoju needs to start with easy concepts and work his way upwards to hard ones."
   },
   "skill": {
-    "message": "Tarun has done well with medium / hard concepts in Forms of matter and Measurements. We do notice gaps in Biology and Algebra. Tarun needs to start with easy concepts and work his way upwards to hard ones.",
     "skill": [
       {
         "title": "Application",
-        "score": "3",
-        "total": "10",
-        "percentage": "33"
+        "score": 7.0,
+        "total": 15.0,
+        "percentage": 46.666666666666664
       },
       {
         "title": "Conceptual Understanding",
-        "score": "1.5",
-        "total": "10",
-        "percentage": "15"
+        "score": 4.0,
+        "total": 14.0,
+        "percentage": 28.57142857142857
+      },
+      {
+        "title": "Conceptual",
+        "score": 0.0,
+        "total": 1.0,
+        "percentage": 0.0
       }
-    ]
+    ],
+    "message": "Vamshi Chennoju seems to be able to apply what was learnt with a few concepts in Algebra, Sample Unit #2, Statistics, Unitsample, Trignometry. We do notice gaps with concepts in Statistics, Algebra, Sample Unit #2, , Trignometry, Unitsample, Calculus. Vamshi Chennoju needs a thorough revision and practice in these"
   }
 }

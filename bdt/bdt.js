@@ -14,6 +14,7 @@ const {
   progressTextPosition,
   getGradeImages,
   getGapText,
+  roundIt,
 } = require("./utils/helpers");
 
 const main = path.resolve(__dirname + "/partials/layout.hbs");
@@ -31,6 +32,7 @@ const registerPartials = () => {
 
 const registerHelpers = () => {
   hbs.registerHelper("scoreCircleOffset", scoreCircleOffset);
+  hbs.registerHelper("roundIt", roundIt);
   hbs.registerHelper("getSubjectIcon", getSubjectIcon);
   hbs.registerHelper("formatDate", formatDate);
   hbs.registerHelper("progressBarOffset", progressBarOffset);
