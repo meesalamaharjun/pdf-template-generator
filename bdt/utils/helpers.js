@@ -26,7 +26,9 @@ function formatDate(dateString) {
     return `${n}${suffix}`;
   };
 
-  const date = new Date(dateString);
+  const dateParts = dateString.split('/')
+
+  const date = new Date(`${dateParts[2]}/${dateParts[1]}/${dateParts[0]}`);
 
   const day = new Intl.DateTimeFormat("en-GB", {
     day: "2-digit",
