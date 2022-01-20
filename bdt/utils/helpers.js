@@ -6,7 +6,7 @@ function scoreCircleOffset(percentage) {
 
 
 function roundIt(percentage) {
-  return +(percentage).toFixed(2);
+  return Math.round(+(percentage));
 }
 
 
