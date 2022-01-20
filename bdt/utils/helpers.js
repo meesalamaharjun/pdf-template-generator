@@ -42,6 +42,7 @@ function progressBarGradient(score) {
 
 function progressTextPosition(percentage) {
   let parsedPercentage = parseInt(percentage, 10);
+  if(parsedPercentage <=8) return parsedPercentage;
   return parsedPercentage - 8;
 }
 

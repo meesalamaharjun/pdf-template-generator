@@ -271,7 +271,7 @@ section {
   position: absolute;
   width: 40%;
   height: 6px;
-  padding: 2px;
+  padding: 2px 0px;
   border-radius: 20px;
   z-index: 20;
 }
