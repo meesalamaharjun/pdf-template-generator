@@ -1,6 +1,5 @@
 @page {
   size: auto;
-  min-height: 1060px;
 }
 
 @font-face {
@@ -27,11 +26,6 @@
     format("truetype");
 }
 
-section {
-  background-size: cover;
-  min-height: 1060px;
-}
-
 body {
   font-family: "DejaVuSans";
   margin: 0;
@@ -44,108 +38,64 @@ body {
   width: 10.25in;
   height: 13.25in;
 }
-
-.student-details-container {
-  display: flex;
+.bnat-k10 {
+  width: 100%;
 }
 
-.empty-div {
-  width: 30px;
-  height: 130px;
-  margin: 223px 0 0 0px;
-}
-
-.student-details {
-  background: white;
-  height: 111px;
-  width: 698px;
-  margin: 14em 0 0 3.35em;
-}
-
-.student-name {
-  font-family: "DejaVuSans-bold";
-  font-size: 28px;
+.student-report-title-container {
   display: flex;
   justify-content: center;
 }
-
-.details-key {
-  font-size: 18px;
-  color: grey;
-}
-
-.student-marks-container {
+.student-report-title {
+  width: 650px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  height: 60px;
+  font-size: 24px;
+  border-radius: 20px;
+  border: 2px purple solid;
+  align-items: center;
 }
 
-.details-value {
-  color: blueviolet;
-}
-
-.air-rank {
-  font-family: "DejaVuSans";
-  font-size: 26px;
-  margin-top: 0.75em;
-  color: black;
-  font-weight: bold;
-}
-
-.air-rank-value {
-  font-family: "DejaVuSans";
-  font-size: 26px;
-  margin-left: 9px;
-  font-weight: bold;
-}
-
-.student-percentage {
-  font-size: 1.76em;
-  margin: 0.6em 0 0 11.5em;
-  color: white;
-}
-
-.state-percentage {
-  font-size: 1.76em;
-  margin: 3em 0 0 11.5em;
-  color: white;
-}
-
-.student-percentage-container {
+.student-name-container {
   display: flex;
-  width: 800px;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 30px;
 }
 
-.student-percentile {
-  font-size: 1.75em;
-  color: white;
-  margin-left: 2em;
-  margin-top: 0.65em;
-}
-
-.state-percentile {
-  font-size: 1.75em;
-  color: white;
-  margin-left: 1.7em;
-  margin-top: 3em;
-}
-
-.address-container {
+.assessment-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  font-size: 24px;
 }
 
-.state-value {
-  margin-left: 12em;
-  color: white;
-  margin-top: 0.4em;
+.assessment-value {
+  margin-left: 20px;
+  color: purple;
 }
 
-.state-district {
-  margin-left: 16em;
-  color: white;
-  margin-top: 0.4em;
+.circle-percentage-container {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px grey;
+  flex-direction: column;
 }
-
+.circle-percentage {
+  width: 100px;
+  border: 15px solid #e8a701;
+  height: 100px;
+  border-radius: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(82, 82, 216);
+  font-size: 30px;
+}
 .second-page {
   margin-top: 32em;
   height: 10em;
@@ -164,7 +114,6 @@ body {
 @media print {
   .page {
     page-break-after: always;
-    min-height: 1060px;
   }
 }
 
@@ -283,23 +232,19 @@ body {
 
 .test-summary {
   background-color: #f1e2f1;
-  width: 983px;
-  /* height:1273px; */
 }
 
 .table-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  height: 560px;
 }
 
 .table-parent {
   margin-top: 1rem;
   background-color: white;
-  border-radius: 3%;
+  width: 50rem;
+  height: 25rem;
+  border-radius: 5%;
   padding: 1rem;
   display: flex;
   justify-content: flex-start;
@@ -668,4 +613,44 @@ ul li::before {
   font-weight: bold;
   position: relative;
   left: 40px;
+}
+.circle-box-container {
+  width: 100%;
+  height: 332px;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+.circle-text {
+  font-size: 24px;
+  margin: 12px;
+}
+.percentile-box {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.percentile-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.percentile {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 80px 10px 80px;
+  border-radius: 10px;
+}
+.you-percentile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
