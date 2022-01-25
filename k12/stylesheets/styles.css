@@ -1,0 +1,686 @@
+@page {
+  size: auto;
+<<<<<<< Updated upstream
+  min-height: 1060px;
+=======
+>>>>>>> Stashed changes
+}
+
+@font-face {
+  font-family: "DejaVuSans";
+  src: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/fonts/DejaVuSansCondensed.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "DejaVuSans-bold";
+  src: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/fonts/DejaVuSansCondensed-Bold.ttf")
+    format("truetype");
+}
+
+<<<<<<< Updated upstream
+=======
+section {
+  background-size: cover;
+  min-height: 1200px;
+  padding: 20px 40px;
+}
+
+>>>>>>> Stashed changes
+@font-face {
+  font-family: "NotoSans";
+  src: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/fonts/NotoSans-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "NotoSans-bold";
+  src: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/fonts/NotoSans-Bold.ttf")
+    format("truetype");
+}
+
+<<<<<<< Updated upstream
+section {
+  background-size: cover;
+  min-height: 1060px;
+}
+
+=======
+>>>>>>> Stashed changes
+body {
+  font-family: "DejaVuSans";
+  margin: 0;
+}
+
+.keep-learning {
+  background-image: url("https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/images/learning-min2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 10.25in;
+  height: 13.25in;
+}
+
+.student-details-container {
+  display: flex;
+}
+
+.empty-div {
+  width: 30px;
+  height: 130px;
+  margin: 223px 0 0 0px;
+}
+
+.student-details {
+  background: white;
+  height: 111px;
+  width: 698px;
+  margin: 14em 0 0 3.35em;
+}
+
+.student-name {
+  font-family: "DejaVuSans-bold";
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.details-key {
+  font-size: 18px;
+  color: grey;
+}
+
+.student-marks-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.details-value {
+  color: blueviolet;
+}
+
+.air-rank {
+  font-family: "DejaVuSans";
+  font-size: 26px;
+  margin-top: 0.75em;
+  color: black;
+  font-weight: bold;
+}
+
+.air-rank-value {
+  font-family: "DejaVuSans";
+  font-size: 26px;
+  margin-left: 9px;
+  font-weight: bold;
+}
+
+.student-percentage {
+  font-size: 1.76em;
+  margin: 0.6em 0 0 11.5em;
+  color: white;
+}
+
+.state-percentage {
+  font-size: 1.76em;
+  margin: 3em 0 0 11.5em;
+  color: white;
+}
+
+.student-percentage-container {
+  display: flex;
+  width: 800px;
+}
+
+.student-percentile {
+  font-size: 1.75em;
+  color: white;
+  margin-left: 2em;
+  margin-top: 0.65em;
+}
+
+.state-percentile {
+  font-size: 1.75em;
+  color: white;
+  margin-left: 1.7em;
+  margin-top: 3em;
+}
+
+.address-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.state-value {
+  margin-left: 12em;
+  color: white;
+  margin-top: 0.4em;
+}
+
+.state-district {
+  margin-left: 16em;
+  color: white;
+  margin-top: 0.4em;
+}
+
+.second-page {
+  margin-top: 32em;
+  height: 10em;
+  background: white;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.second-page-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Styles */
+
+@media print {
+  .page {
+    page-break-after: always;
+    min-height: 1060px;
+  }
+}
+
+.section {
+  padding: 50px 100px;
+}
+
+.section-heading {
+  position: relative;
+  font-size: 26px;
+  color: purple;
+}
+
+.section-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 200px;
+  border-top: 2px solid purple;
+}
+
+.section-heading h3 {
+  margin: 0;
+}
+
+.section-heading h3:first-child {
+  margin-bottom: 10px;
+}
+
+/* Section content */
+.section-content {
+  margin-top: 50px;
+}
+
+.section-content .bold {
+  font-family: "DejaVuSans-bold";
+}
+
+.section-content p {
+  margin: 0px 0 20px 0;
+  font-size: 22px;
+}
+
+/* The ribbon */
+.ribbon {
+  font-family: "DejaVuSans-bold";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+
+  width: 500px;
+  height: 70px;
+  background-color: #45255a;
+  position: absolute;
+  animation: drop forwards 0.8s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.student-performance {
+  font-size: 25px;
+  color: purple;
+  width: 10%;
+  margin-left: 20%;
+  margin-left: 16%;
+  margin-bottom: 30px;
+}
+
+.analytics-heading {
+  position: relative;
+  font-size: 26px;
+  color: purple;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  background-color: purple;
+  padding: 10px;
+  border-radius: 5%;
+  height: 140px;
+  width: 140px;
+}
+
+.box-header {
+  font-size: 20px;
+  color: white;
+}
+
+.box-mid {
+  background-color: white;
+  width: 30%;
+  margin: 10px 0;
+  padding: 1px 0;
+}
+
+.box-footer {
+  font-size: 30px;
+  color: white;
+}
+
+.test-summary {
+  background-color: #f1e2f1;
+  width: 983px;
+  /* height:1273px; */
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 560px;
+}
+
+.table-parent {
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: 3%;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.table-row {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  flex-direction: row;
+  width: 100%;
+}
+
+.table-section {
+  border: 1px solid grey;
+  width: 8rem;
+  height: 4rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-section-font {
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
+}
+
+.table-value-last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.table-value-font {
+  color: purple;
+  font-size: 13px;
+}
+
+.ribbon:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: -35px;
+  top: 0px;
+  bottom: 0;
+  border-bottom: 35px solid #45255a;
+  border-left: 35px solid transparent;
+  border-top: 35px solid #45255a;
+}
+
+.ribbon:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: -35px;
+  top: 0px;
+  bottom: 0;
+  border-bottom: 35px solid #45255a;
+  border-right: 35px solid transparent;
+  border-top: 35px solid #45255a;
+}
+
+/* Result Section */
+
+.result-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.report {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  width: calc(100% - 100px);
+  height: 80px;
+  background-color: #45255a;
+  position: relative;
+  animation: drop forwards 0.8s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  text-align: right;
+  flex: 1;
+  justify-content: flex-end;
+  padding: 0px 50px 0 100px;
+  box-sizing: border-box;
+}
+
+.report-right {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  width: calc(100% - 100px);
+  height: 80px;
+  background-color: #45255a;
+  position: relative;
+  animation: drop forwards 0.8s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  padding: 0px 100px 0 40px;
+  box-sizing: border-box;
+}
+
+.report:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #fff;
+  border-right: 100px solid transparent;
+  position: absolute;
+  top: 0px;
+  left: -1px;
+}
+
+.report-right:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 100px solid #fff;
+  border-top: 100px solid transparent;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+
+.circle {
+  font-family: "DejaVuSans-bold";
+  min-width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background-color: #e97e24;
+  position: relative;
+  z-index: 2;
+  left: -35px;
+  color: white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+/* report-section */
+.report-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2%;
+  box-shadow: 0px 0px 10px 5px #5b235e;
+  padding: 2.2em;
+  position: relative;
+  margin-top: 30px;
+  width: 80%;
+}
+
+.right-circle {
+  left: 25px;
+}
+
+.down-report {
+  margin-top: 10px;
+}
+
+.empty-span {
+  width: 75px;
+}
+
+.marks-section {
+  display: flex;
+  font-family: "NotoSans";
+  width: 100%;
+}
+
+.marks-sub-section {
+  width: 50%;
+}
+
+.student-name {
+  font-size: 1.5em;
+}
+
+.pdf-title {
+  font-family: "DejaVuSans-bold";
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+}
+
+.first-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #833187;
+}
+
+.bnat-logo {
+  height: 80px;
+  width: 280px;
+}
+
+.badge-message {
+  background: #45255a;
+  font-size: 1em;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.address-line {
+  font-size: 12px;
+  font-family: "DejaVuSans-bold";
+}
+
+.side-heading {
+  font-family: "DejaVuSans-bold";
+  font-size: 12.5px;
+  font-weight: bold;
+  color: #a9a9a9;
+}
+
+.side-values {
+  font-family: "DejaVuSans-bold";
+  font-size: 10.5px;
+  color: purple;
+}
+
+.class-details {
+  font-family: "DejaVuSans-bold";
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.air-header {
+  font-family: "DejaVuSans-bold";
+  font-size: 18px;
+}
+
+.air-value {
+  font-family: "DejaVuSans-bold";
+  font-size: 15px;
+  color: purple;
+}
+
+.air-container {
+  margin-top: 25px;
+}
+
+ul li::before {
+  width: 1em2;
+}
+
+.page-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section-circle {
+  margin-bottom: 300px;
+}
+
+.circle-1 {
+  height: 160px;
+  width: 160px;
+  background-color: #ffdafe;
+  border-radius: 50%;
+  margin: -10px 40px 20px 300px;
+  display: inline-block;
+  position: absolute;
+}
+
+.circle-2 {
+  height: 160px;
+  width: 160px;
+  background-color: #98afc7;
+  border-radius: 50%;
+  margin: 105px 40px 20px 200px;
+  display: inline-block;
+  position: absolute;
+}
+
+.circle-3 {
+  height: 160px;
+  width: 160px;
+  background-color: #81d8d0;
+  border-radius: 50%;
+  margin: 105px 40px 20px 400px;
+  display: inline-block;
+  position: absolute;
+}
+
+.circle-4 {
+  height: 160px;
+  width: 160px;
+  background-color: #98afc7;
+  border-radius: 50%;
+  margin: -10px 40px 20px 500px;
+  display: inline-block;
+  position: absolute;
+}
+
+.inner-1 {
+  font-size: 22px;
+  font-family: "DejaVuSans";
+  position: absolute;
+  top: 40%;
+  left: 30px;
+  text-align: center;
+  line-height: 0px;
+}
+
+.inner-2 {
+  font-size: 22px;
+  font-family: "DejaVuSans";
+  position: relative;
+  top: 55%;
+  left: 60px;
+  text-align: center;
+  line-height: 10px;
+}
+
+.remarks-1 {
+  font-family: "DejaVuSans-bold";
+  color: #ff0000e8;
+  font-weight: bold;
+}
+
+.remarks-2 {
+  font-family: "DejaVuSans-bold";
+  color: #ffc400;
+  font-weight: bold;
+}
+.Focus {
+  font-family: "DejaVuSans-bold";
+  color: #ff0000e8;
+  font-weight: bold;
+}
+
+.Good {
+  font-family: "DejaVuSans-bold";
+  color: #ffc400;
+  font-weight: bold;
+}
+
+.Excellent {
+  font-family: "DejaVuSans-bold";
+  color: #09ff00;
+  font-weight: bold;
+}
+
+.learning-tips {
+  font-size: 21px;
+  line-height: 24px;
+}
+
+.thanks-message {
+  font-family: "DejaVuSans-bold";
+  font-weight: bold;
+  position: relative;
+  left: 40px;
+}
