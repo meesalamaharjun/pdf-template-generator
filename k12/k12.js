@@ -10,6 +10,42 @@ const {
 const main = path.resolve(__dirname + "/partials/layout.hbs");
 const pdfPath = path.join("pdf", `k12.pdf`);
 
+ let subjetArray = sampleData.subjects.split(",");
+
+  let arr = [];
+
+  if (subjetArray.length === 1) {
+    if (subjetArray[0].contains("and")) {
+      let lastElArr = subjetArray[0].split("and");
+      for (let i = 0; i < lastElArr.length; i++) {
+        let obj = {};
+        obj.name = lastElArr[i].trim();
+        obj.data = { ...sampleData[lastElArr[i].toLowerCase().trim()] };
+        arr.push(obj);
+      }
+    } else {
+      let obj = {};
+      obj.name = subjetArray[0].trim();
+      obj.data = { ...sampleData[subjetArray[0].toLowerCase().trim()] };
+      arr.push(obj);
+    }
+  } else {
+    for (let i = 0; i < subjetArray.length - 1; i++) {
+      let obj = {};
+      obj.name = subjetArray[i].trim();
+      obj.data = { ...sampleData[subjetArray[i].toLowerCase().trim()] };
+      arr.push(obj);
+    }
+    let lastElArr = subjetArray[subjetArray.length - 1].split("and");
+    for (let i = 0; i < lastElArr.length; i++) {
+      let obj = {};
+      obj.name = lastElArr[i].trim();
+      obj.data = { ...sampleData[lastElArr[i].toLowerCase().trim()] };
+      arr.push(obj);
+    }
+  }
+  sampleData.subjetArray = JSON.parse(JSON.stringify(arr));
+
 const registerPartials = () => {
   const partialsDir = path.resolve(__dirname + "/partials");
   const filenames = fs.readdirSync(partialsDir);
