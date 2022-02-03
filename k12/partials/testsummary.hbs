@@ -8,31 +8,31 @@
         <h3>Test Summary</h3>
       </div>
       <div style="margin-top: 40px; padding-bottom: 8px;">
-        <div class="box-container">
-          <div class="box">
+        <div class="box-container justfyRowCenter">
+          <div class="box justfyColumnStart">
             <div class="box-header">Questions Attempted</div>
             <div class="box-mid"></div>
             <div class="box-footer">{{overall_analytics.attempted}} out of {{overall_analytics.max_questions}}</div>
           </div>
-          <div class="box">
+          <div class="box justfyColumnStart">
             <div style="width: 50%;" class="box-header">Total Score</div>
             <div class="box-mid"></div>
             <div class="box-footer">{{overall_analytics.total_score}}</div>
           </div>
-          <div class="box">
+          <div class="box justfyColumnStart">
             <div class="box-header">Percentage Score</div>
             <div class="box-mid"></div>
             <div class="box-footer">{{overall_analytics.overall_percentage}}%</div>
           </div>
 
         </div>
-        <div class="box-container">
-          <div class="box">
+        <div class="box-container justfyRowCenter">
+          <div class="box justfyColumnStart">
             <div class="box-header">All India Percentile</div>
             <div class="box-mid"></div>
             <div class="box-footer">{{overall_analytics.overall_percentile}}</div>
           </div>
-          <div class="box">
+          <div class="box justfyColumnStart">
             <div style="width: 80%;" class="box-header">Average Time / Ques</div>
             <div class="box-mid"></div>
             <div class="box-footer">{{overall_analytics.average_time_question}}</div>
@@ -48,35 +48,35 @@
           <h3 style="margin-bottom: 18px;">Analytics</h3>
           <div style="width:120px;border:1px solid purple ;"></div>
         </div>
-        <div class="table-container">
-          <div id="table-parent" class="table-parent">
-            <div class="table-row">
-              <div class="table-section"></div>
-              <div class="table-section table-section-font">Attempted</div>
-              <div class="table-section table-section-font">Correct</div>
-              <div class="table-section table-section-font">Incorrect</div>
-              <div class="table-section table-section-font">Total Time Taken</div>
-              <div class="table-section table-section-font">Average Time / Ques</div>
+        <div class="table-container justfyColumnCenter">
+          <div id="table-parent" class="justfyColumnStart table-parent">
+            <div class="table-row justifyCenter">
+              <div class="table-section justifyCenter"></div>
+              <div class="table-section table-section-font justifyCenter">Attempted</div>
+              <div class="table-section table-section-font justifyCenter">Correct</div>
+              <div class="table-section table-section-font justifyCenter">Incorrect</div>
+              <div class="table-section table-section-font justifyCenter">Total Time Taken</div>
+              <div class="table-section table-section-font justifyCenter">Average Time / Ques</div>
             </div>
-            <div class="table-row">
-              <div class="table-section table-section-font">Overall Analysis</div>
-              <div class="table-section table-value-font">{{overall_analytics.attempted}} out of {{overall_analytics.max_questions}}</div>
-              <div class="table-section table-value-font">{{overall_analytics.correct}} out of {{overall_analytics.max_questions}}</div>
-              <div class="table-section table-value-font">{{overall_analytics.incorrect}} out of {{overall_analytics.max_questions}}</div>
-              <div class="table-section table-value-font">{{overall_analytics.total_time_taken}}</div>
-              <div class="table-section table-value-last">
+            <div class="table-row justifyCenter">
+              <div class="table-section table-section-font justifyCenter">Overall Analysis</div>
+              <div class="table-section table-value-font justifyCenter">{{overall_analytics.attempted}} out of {{overall_analytics.max_questions}}</div>
+              <div class="table-section table-value-font justifyCenter">{{overall_analytics.correct}} out of {{overall_analytics.max_questions}}</div>
+              <div class="table-section table-value-font justifyCenter">{{overall_analytics.incorrect}} out of {{overall_analytics.max_questions}}</div>
+              <div class="table-section table-value-font justifyCenter">{{overall_analytics.total_time_taken}}</div>
+              <div class="table-section table-value-last justfyColumnCenter">
                 <div style="font-size: 13px; color:purple; margin-bottom: 2px;">{{overall_analytics.average_time_question}}</div>
                 <div style="font-size: 11px; color:purple; ">{{overall_analytics.percentage_faster}}% students were faster</div>
               </div>
             </div>
             {{#each subjetArray}}
-            <div class="table-row">
-              <div class="table-section table-section-font">{{this.name}}</div>
-              <div class="table-section table-value-font">{{this.data.attempted}} out of {{this.data.max_questions}}</div>
-              <div class="table-section table-value-font">{{this.data.correct}} out of {{this.data.max_questions}}</div>
-              <div class="table-section table-value-font">{{this.data.incorrect}} out of {{this.data.max_questions}}</div>
-              <div class="table-section table-value-font">{{this.data.total_time_taken}}</div>
-              <div class="table-section table-value-last">
+            <div class="table-row justifyCenter">
+              <div class="table-section table-section-font justifyCenter">{{this.name}}</div>
+              <div class="table-section table-value-font justifyCenter">{{this.data.attempted}} out of {{this.data.max_questions}}</div>
+              <div class="table-section table-value-font justifyCenter">{{this.data.correct}} out of {{this.data.max_questions}}</div>
+              <div class="table-section table-value-font justifyCenter">{{this.data.incorrect}} out of {{this.data.max_questions}}</div>
+              <div class="table-section table-value-font justifyCenter">{{this.data.total_time_taken}}</div>
+              <div class="table-section table-value-last justfyColumnCenter">
                 <div style="font-size: 13px; color:purple; margin-bottom: 2px;">{{this.data.average_time_question}}</div>
                 <div style="font-size: 11px; color:purple; ">{{this.data.percentage_faster}}% students were faster</div>
               </div>

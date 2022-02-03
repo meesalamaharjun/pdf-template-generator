@@ -44,119 +44,8 @@ body {
   width: 10.25in;
   height: 13.25in;
 }
-
-.student-details-container {
-  display: flex;
-}
-
-.empty-div {
-  width: 30px;
-  height: 130px;
-  margin: 223px 0 0 0px;
-}
-
-.student-details {
-  background: white;
-  height: 111px;
-  width: 698px;
-  margin: 14em 0 0 3.35em;
-}
-
 .student-name {
-  font-family: "DejaVuSans-bold";
   font-size: 28px;
-  display: flex;
-  justify-content: center;
-}
-
-.details-key {
-  font-size: 18px;
-  color: grey;
-}
-
-.student-marks-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.details-value {
-  color: blueviolet;
-}
-
-.air-rank {
-  font-family: "DejaVuSans";
-  font-size: 26px;
-  margin-top: 0.75em;
-  color: black;
-  font-weight: bold;
-}
-
-.air-rank-value {
-  font-family: "DejaVuSans";
-  font-size: 26px;
-  margin-left: 9px;
-  font-weight: bold;
-}
-
-.student-percentage {
-  font-size: 1.76em;
-  margin: 0.6em 0 0 11.5em;
-  color: white;
-}
-
-.state-percentage {
-  font-size: 1.76em;
-  margin: 3em 0 0 11.5em;
-  color: white;
-}
-
-.student-percentage-container {
-  display: flex;
-  width: 800px;
-}
-
-.student-percentile {
-  font-size: 1.75em;
-  color: white;
-  margin-left: 2em;
-  margin-top: 0.65em;
-}
-
-.state-percentile {
-  font-size: 1.75em;
-  color: white;
-  margin-left: 1.7em;
-  margin-top: 3em;
-}
-
-.address-container {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.state-value {
-  margin-left: 12em;
-  color: white;
-  margin-top: 0.4em;
-}
-
-.state-district {
-  margin-left: 16em;
-  color: white;
-  margin-top: 0.4em;
-}
-
-.second-page {
-  margin-top: 32em;
-  height: 10em;
-  background: white;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.second-page-header {
-  display: flex;
-  justify-content: flex-end;
 }
 
 /* Styles */
@@ -166,6 +55,10 @@ body {
     page-break-after: always;
     min-height: 1060px;
   }
+}
+
+.bold-font {
+  font-family: "DejaVuSans-bold";
 }
 
 .section {
@@ -200,21 +93,41 @@ body {
   margin-top: 50px;
 }
 
-.section-content .bold {
-  font-family: "DejaVuSans-bold";
-}
-
 .section-content p {
   margin: 0px 0 20px 0;
   font-size: 22px;
 }
 
-/* The ribbon */
-.ribbon {
-  font-family: "DejaVuSans-bold";
+/*Flex*/
+
+.justifyCenter {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.justfyRowCenter {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.justfyColumnStart {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+.justfyColumnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+/* The ribbon */
+.ribbon {
   color: #fff;
   font-size: 30px;
 
@@ -244,19 +157,11 @@ body {
 }
 
 .box-container {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
   padding: 5px;
   margin-bottom: 20px;
 }
 
 .box {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: flex-start;
   background-color: purple;
   padding: 10px;
   border-radius: 5%;
@@ -284,14 +189,9 @@ body {
 .test-summary {
   background-color: #f1e2f1;
   width: 983px;
-  /* height:1273px; */
 }
 
 .table-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
   width: 100%;
   height: 560px;
 }
@@ -301,17 +201,11 @@ body {
   background-color: white;
   border-radius: 3%;
   padding: 1rem;
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
-  flex-direction: column;
 }
 
 .table-row {
-  display: flex;
-  justify-content: center;
   align-items: top;
-  flex-direction: row;
   width: 100%;
 }
 
@@ -319,9 +213,6 @@ body {
   border: 1px solid grey;
   width: 8rem;
   height: 4rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -329,13 +220,6 @@ body {
   font-size: 13px;
   font-weight: 600;
   color: black;
-}
-
-.table-value-last {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .table-value-font {
@@ -370,14 +254,10 @@ body {
 /* Result Section */
 
 .result-section {
-  display: flex;
-  align-items: center;
   width: 100%;
 }
 
 .report {
-  display: flex;
-  align-items: center;
   color: #fff;
   font-size: 15px;
   width: calc(100% - 100px);
@@ -393,8 +273,6 @@ body {
 }
 
 .report-right {
-  display: flex;
-  align-items: center;
   color: #fff;
   font-size: 15px;
   width: calc(100% - 100px);
@@ -429,7 +307,6 @@ body {
 }
 
 .circle {
-  font-family: "DejaVuSans-bold";
   min-width: 110px;
   height: 110px;
   border-radius: 100%;
@@ -438,18 +315,11 @@ body {
   z-index: 2;
   left: -35px;
   color: white;
-  justify-content: center;
-  display: flex;
-  align-items: center;
   font-size: 24px;
 }
 
 /* report-section */
 .report-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   background-color: #fff;
   border-radius: 2%;
   box-shadow: 0px 0px 10px 5px #5b235e;
@@ -486,17 +356,12 @@ body {
 }
 
 .pdf-title {
-  font-family: "DejaVuSans-bold";
   font-size: 30px;
   color: white;
   margin: 10px;
 }
 
 .first-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background: #833187;
 }
 
@@ -510,44 +375,35 @@ body {
   font-size: 1em;
   width: 100%;
   height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
 }
 
 .address-line {
   font-size: 12px;
-  font-family: "DejaVuSans-bold";
 }
 
 .side-heading {
-  font-family: "DejaVuSans-bold";
   font-size: 12.5px;
   font-weight: bold;
   color: #a9a9a9;
 }
 
 .side-values {
-  font-family: "DejaVuSans-bold";
   font-size: 10.5px;
   color: purple;
 }
 
 .class-details {
-  font-family: "DejaVuSans-bold";
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
 
 .air-header {
-  font-family: "DejaVuSans-bold";
   font-size: 18px;
 }
 
 .air-value {
-  font-family: "DejaVuSans-bold";
   font-size: 15px;
   color: purple;
 }
@@ -569,93 +425,66 @@ ul li::before {
   margin-bottom: 300px;
 }
 
-.circle-1 {
+.score-circle {
   height: 160px;
   width: 160px;
-  background-color: #ffdafe;
   border-radius: 50%;
-  margin: -10px 40px 20px 300px;
   display: inline-block;
   position: absolute;
+}
+
+.circle-1 {
+  background-color: #ffdafe;
+  margin: -10px 40px 20px 300px;
 }
 
 .circle-2 {
-  height: 160px;
-  width: 160px;
   background-color: #98afc7;
-  border-radius: 50%;
   margin: 105px 40px 20px 200px;
-  display: inline-block;
-  position: absolute;
 }
 
 .circle-3 {
-  height: 160px;
-  width: 160px;
   background-color: #81d8d0;
-  border-radius: 50%;
   margin: 105px 40px 20px 400px;
-  display: inline-block;
-  position: absolute;
 }
 
 .circle-4 {
-  height: 160px;
-  width: 160px;
   background-color: #98afc7;
-  border-radius: 50%;
   margin: -10px 40px 20px 500px;
-  display: inline-block;
-  position: absolute;
 }
 
-.inner-1 {
-  font-size: 22px;
-  font-family: "DejaVuSans";
-  position: absolute;
-  top: 40%;
-  left: 30px;
-  text-align: center;
-  line-height: 0px;
-}
-
-.inner-2 {
+.inner-value {
   font-size: 22px;
   font-family: "DejaVuSans";
   position: relative;
-  top: 55%;
-  left: 60px;
   text-align: center;
+}
+
+.inner-1 {
+  top: 40%;
+  left: 30px;
+  line-height: 0px;
+}
+
+.first-inner {
+  left: 50px !important;
+}
+.inner-2 {
+  top: 55%;
+  left: -25px;
   line-height: 10px;
 }
 
-.remarks-1 {
-  font-family: "DejaVuSans-bold";
-  color: #ff0000e8;
-  font-weight: bold;
-}
-
-.remarks-2 {
-  font-family: "DejaVuSans-bold";
-  color: #ffc400;
-  font-weight: bold;
-}
 .Focus {
-  font-family: "DejaVuSans-bold";
   color: #ff0000e8;
-  font-weight: bold;
 }
 
 .Good {
-  font-family: "DejaVuSans-bold";
   color: #ffc400;
-  font-weight: bold;
 }
 
 .Excellent {
-  font-family: "DejaVuSans-bold";
   color: #09ff00;
-  font-weight: bold;
 }
 
 .learning-tips {
@@ -664,8 +493,6 @@ ul li::before {
 }
 
 .thanks-message {
-  font-family: "DejaVuSans-bold";
-  font-weight: bold;
   position: relative;
   left: 40px;
 }
