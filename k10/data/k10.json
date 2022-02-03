@@ -1,0 +1,148 @@
+{
+   "assignment_id":"12345abcnd",
+   "full_name":"full_name",
+   "bnat_id":"adhjsaj121212",
+   "assessment_date":"22/11/2021",
+   "grade":"12",
+   "enrolment_no":"92828772727",
+   "state":"state",
+   "state_percentile":"98.0",
+   "city":"city",
+   "city_percentile":"93.0",
+   "name":"Diksha",
+   "overall_analytics":{
+      "rank":"10",
+      "total_score":"30.0",
+      "overall_percentage":"90.0",
+      "percentage_faster":"45.0",
+      "overall_percentile":"93.4",
+      "percentage_better":"N/A",
+      "attempted":"20",
+      "correct":"15",
+      "incorrect":"5",
+      "total_time_taken":"2 mins, 52 secs",
+      "average_time_question":"30 secs",
+      "max_questions":"25",
+      "max_score":"100"
+   },
+   "Mathematical Ability":{
+      "attempted":"20",
+      "correct":"15",
+      "incorrect":"5",
+      "total_time_taken":"10 mins",
+      "average_time_question":"30 secs",
+      "percentage":"78",
+      "percentage_faster":"87",
+      "max_questions":"30"
+   },
+   "Verbal Ability":{
+      "attempted":"20",
+      "correct":"15",
+      "incorrect":"5",
+      "total_time_taken":"10 mins",
+      "average_time_question":"30 secs",
+      "percentage":"78",
+      "percentage_faster":"87",
+      "max_questions":"30"
+   },
+   "Logical Ability":{
+      "attempted":"20",
+      "correct":"15",
+      "incorrect":"5",
+      "total_time_taken":"10 mins",
+      "average_time_question":"30 secs",
+      "percentage":"78",
+      "percentage_faster":"87",
+      "max_questions":"30"
+   },
+   "Environmental Science":{
+      "attempted":"20",
+      "correct":"15",
+      "incorrect":"5",
+      "total_time_taken":"10 mins",
+      "average_time_question":"30 secs",
+      "percentage":"78",
+      "percentage_faster":"87",
+      "max_questions":"30"
+   },
+   "Science":{
+      "attempted":"20",
+      "correct":"15",
+      "incorrect":"5",
+      "total_time_taken":"10 mins",
+      "average_time_question":"30 secs",
+      "percentage":"78",
+      "percentage_faster":"87",
+      "max_questions":"30"
+   },
+   "Social Science":{
+      "attempted":"20",
+      "correct":"15",
+      "incorrect":"5",
+      "total_time_taken":"10 mins",
+      "average_time_question":"30 secs",
+      "percentage":"78",
+      "percentage_faster":"87",
+      "max_questions":"30"
+   },
+   "mathematical_ability_score":{
+      "value":"Good",
+      "narrative":"sample narration good"
+   },
+   "verbal_ability_score":{
+      "value":"Good",
+      "narrative":"sample narration good"
+   },
+   "logical_ability_score":{
+      "value":"Good",
+      "narrative":"sample narration good"
+   },
+   "science_score":{
+      "value":"Good",
+      "narrative":"sample narration good"
+   },
+   "environmental_science_score":{
+      "value":"Good",
+      "narrative":"sample narration good"
+   },
+   "social_science_score":{
+      "value":"Good",
+      "narrative":"sample narration good"
+   },
+   "retention_score":{
+      "value":"Excellent",
+      "narrative":"sample narration good"
+   },
+   "speed_score":{
+      "value":"Focus Area",
+      "narrative":"sample narration good"
+   },
+   "accuracy_score":{
+      "value":"Focus Area",
+      "narrative":"sample narration good"
+   },
+   "application_score":{
+      "value":"Focus Area",
+      "narrative":"sample narration good"
+   },
+   "numerical_reasoning_score":{
+      "value":"Good",
+      "narrative":"sample narration good"
+   },
+   "analytical_reasoning_score":{
+      "value":"Good",
+      "narrative":"sample narration good"
+   },
+   "conceptual_understanding_score":{
+      "value":"Good",
+      "narrative":"sample narration good"
+   },
+   "spatial_reasoning_score":{
+      "value":"Good",
+      "narrative":"sample narration good"
+   },
+   "overall_analysis_score":{
+      "value":"Good",
+      "narrative":"sample narration good"
+   }
+}

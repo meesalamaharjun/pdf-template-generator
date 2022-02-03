@@ -1,0 +1,88 @@
+<section class="first-page">
+    <img class="bnat-logo"
+      src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/images/bnat_logo.png" />
+    <span class="pdf-title">BNAT - BYJU'S National Aptitude Test</span>
+    <div class="report-section">
+      <div class="ribbon">Student Assesment Report</div>
+      <div>
+        <span class="student-name">{{full_name}}</span>
+      </div>
+      <div class="class-details">
+        <div>
+          <div>
+            <span class="side-heading"> Current Class</span>
+            <br />
+            <span class="side-values">{{grade}}</span>
+          </div>
+          <div>
+            <span class="side-heading"> Target Exam</span>
+            <br />
+            <span class="side-values">{{target_exam}}</span>
+          </div>
+        </div>
+        <div>
+          <div class="air-container">
+            <span class="air-header"> AIR</span>
+            <br />
+            <span class="air-value">{{overall_analytics.rank}}</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span class="side-heading"> Assessment Date</span>
+            <br />
+            <span class="side-values">{{dateFormat assessment_date format}}</span>
+          </div>
+          <div>
+            <span class="side-heading"> Enrolment Number</span>
+            <br />
+            <span class="side-values">{{enrolment_no}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="marks-section">
+        <div class="marks-sub-section">
+          <div class="result-section">
+            <div class="report">You have scored</div>
+            <div class="circle">{{overall_analytics.overall_percentage}}%</div>
+          </div>
+          <div class="result-section down-report">
+            <div class="report">
+              <span class="right-content">Your State <br />Percentile
+                <br /><span class="address-line">({{state}})
+                </span>
+              </span>
+
+            </div>
+            <div class="circle">{{state_percentile}}</div>
+          </div>
+        </div>
+        <div class="marks-sub-section">
+          <div class="result-section">
+            <div class="circle right-circle">{{overall_analytics.overall_percentile}}</div>
+            <div class="report-right">
+              <span class="right-content">Your All India Percentile</span>
+            </div>
+          </div>
+          <div class="result-section down-report">
+            <div class="circle right-circle">{{city_percentile}}</div>
+            <div class="report-right">
+              <span class="right-content">
+                Your City <br />
+                Percentile
+                <span class="address-line">({{city}})
+                </span>
+              </span>
+              <span class="empty-span"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img style="width: 100%; height: 70%;margin-bottom: 150px;"
+      src="https://pdf-template-generation.s3.ap-south-1.amazonaws.com/assess/images/k12_book.png" />
+    <div class="badge-message">
+      Note : *City and State is displayed as entered by the student in the
+      registration form of BNAT.
+    </div>
+  </section>
