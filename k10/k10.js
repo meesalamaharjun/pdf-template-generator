@@ -7,7 +7,7 @@ const {
   dateFormat,
 } = require("./utils/helpers");
 
-const main = path.resolve(__dirname + "/partials/layout.hbs");
+const main = path.resolve(__dirname + "/partials/k10_layout.hbs");
 const pdfPath = path.join("pdf", `k10.pdf`);
 
 const registerPartials = () => {
