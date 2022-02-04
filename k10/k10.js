@@ -1,10 +1,11 @@
 const fs = require("fs");
 const path = require("path");
 const sampleData = require("./data/k10.json");
+const staticData = require("./data/static.json");
 const hbs = require("hbs");
 const puppeteer = require("puppeteer");
 const {
-  dateFormat,
+  dateFormat, printValue,
 } = require("./utils/helpers");
 
 const main = path.resolve(__dirname + "/partials/k10_layout.hbs");
@@ -22,6 +23,7 @@ const registerPartials = () => {
 
 const registerHelpers = () => {
   hbs.registerHelper("dateFormat", dateFormat);
+  hbs.registerHelper("printValue", printValue);
 };
 
 const compileHTML = async () => {
@@ -37,7 +39,7 @@ const compileHTML = async () => {
   console.log("Generating the template");
   const bdtTemplate = fs.readFileSync(main, "utf-8");
   const template = hbs.handlebars.compile(bdtTemplate);
-  const html = template({...sampleData});
+  const html = template({...sampleData, ...staticData});
   const browser = await puppeteer.launch({
     args: ["--no-sandbox"],
     headless: true,

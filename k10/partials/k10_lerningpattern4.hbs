@@ -8,20 +8,17 @@
         <h3>LEARNING PATTERN ANALYSIS</h3>
       </div>
       <div class="section-content">
-        <p>
-          11. Speed  <span class="{{mathematics_score.value}} bold-font">({{mathematics_score.value}}):</span> A great score in speed indicates that you are 
-          quick with your attempts. Polish your skill further by taking 
-          more time-bound tests with smaller time frames. This skill will 
-          prove highly useful in competitive exams, further studies, and even in daily life.
-
-        </p>
-
-        <p>
-          12. Accuracy. <span class="{{biology_score.value}} bold-font">({{biology_score.value}}):</span> A great score in accuracy indicates 
-          that you are almost accurate with your answers. 
-          Polish your skill further by trying to make your attempts more accurate on a 
-          regular basis. This skill will prove useful in competitive exams and further studies.
-        </p>
+        {{#with learning4}}
+        {{#each points}}
+          <p>
+            {{this.title}}
+            <span
+              class="{{printValue this.name @root 'value'}} bold-font"
+            >({{printValue this.name @root 'value'}}):</span>
+            {{this.description}}
+          </p>
+        {{/each}}
+      {{/with}}
       </div>
     </section>
   </section>

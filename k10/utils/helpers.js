@@ -20,6 +20,12 @@ function dateFormat(date) {
   return `${month} ${day}, ${dateArray[2]}`;
 }
 
+function printValue(value, data, field) {
+  return data[value][field]
+}
+
+
 module.exports = {
   dateFormat,
+  printValue
 };

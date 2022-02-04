@@ -8,39 +8,17 @@
         <h3>LEARNING PATTERN ANALYSIS</h3>
       </div>
       <div class="section-content">
-        <p>
-          8. Conceptual Understanding <span class="{{mathematics_score.value}} bold-font">({{mathematics_score.value}}):</span> Conceptual understanding is a focus area for you. 
-          This indicates that you need to work on your ability to grasp 
-          concepts and apply them. Polish your skill further by undertaking time- bound tests 
-          and reading more related material to achieve an excellent score. This skill will prove useful
-          in competitive exams, further studies, and even in daily life.
-
-        </p>
-
-        <p>
-          9. Spatial Reasoning. <span class="{{biology_score.value}} bold-font">({{biology_score.value}}):</span> Spatial Reasoning is a focus area for you. 
-          This indicates that you need to work harder at visualising and operating 
-          on geometrical figures in 2 and 3-dimensions. It is recommended that you try 
-          drawing simple figures to understand concepts. This will help enhance your spatial skills. 
-          This skill will prove very useful in understanding concepts in subjects like Physics, 
-          Chemistry, and Biology. It will also prove helpful in free- body diagrams, optics, and organic chemistry.
-        </p>
-        <p>
-          10. Application <span class="{{application_score.value}} bold-font">({{application_score.value}}):</span> Application is a focus area for you. 
-          This indicates that you need to work harder at the usage of fundamental concepts and 
-          interlinkages to arrive at the correct solution. This skill will be very useful in attempting questions 
-          that involve a combination of varied concepts. Keep the skill sharpened by attempting questions involving a single concept. 
-          Then, move on to attempting questions involving multiple concepts in a phased manner.
-
-        </p>
-        <p>
-          11. Retention <span class="{{retention_score.value}} bold-font">({{retention_score.value}}):</span> Retention is a focus area for you. 
-          This indicates that you need to work harder at retaining formulae and other 
-          facts and definitions. This skill will be very useful in retaining the concepts 
-          and formulae required for successfully answering questions in competitive examinations. 
-          Whenever you study, start taking notes. You must focus on going through them and rehearsing 
-          them thoroughly. Avoid last-minute studying as it could confuse the mind.
-        </p>
+        {{#with learning3}}
+        {{#each points}}
+          <p>
+            {{this.title}}
+            <span
+              class="{{printValue this.name @root 'value'}} bold-font"
+            >({{printValue this.name @root 'value'}}):</span>
+            {{this.description}}
+          </p>
+        {{/each}}
+      {{/with}}
       </div>
     </section>
   </section>
