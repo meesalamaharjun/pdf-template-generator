@@ -42,14 +42,57 @@ body {
   width: 100%;
 }
 
-.student-report-title-container {
+/*Flex*/
+
+.justifyCenter {
   display: flex;
   justify-content: center;
 }
-.student-report-title {
-  width: 650px;
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.justifyColumnCenter {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.justifyStart {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.justifyEnd {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.justifyAround {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.justifyEven {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+.justifyBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-report-title {
+  width: 650px;
   height: 60px;
   font-size: 24px;
   border-radius: 20px;
@@ -58,15 +101,11 @@ body {
 }
 
 .student-name-container {
-  display: flex;
-  justify-content: center;
   margin-top: 20px;
   font-size: 30px;
 }
 
 .assessment-container {
-  display: flex;
-  justify-content: center;
   font-size: 24px;
 }
 
@@ -78,35 +117,18 @@ body {
 .circle-percentage-container {
   height: 250px;
   width: 250px;
-  display: flex;
-  justify-content: center;
   align-items: center;
   border-radius: 10px;
   box-shadow: 10px 10px 5px grey;
-  flex-direction: column;
 }
 .circle-percentage {
   width: 100px;
   border: 15px solid #e8a701;
   height: 100px;
   border-radius: 75px;
-  display: flex;
-  justify-content: center;
   align-items: center;
   color: rgb(82, 82, 216);
   font-size: 30px;
-}
-.second-page {
-  margin-top: 32em;
-  height: 10em;
-  background: white;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.second-page-header {
-  display: flex;
-  justify-content: flex-end;
 }
 
 /* Styles */
@@ -158,25 +180,6 @@ body {
   font-size: 22px;
 }
 
-/* The ribbon */
-.ribbon {
-  font-family: "DejaVuSans-bold";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 30px;
-
-  width: 500px;
-  height: 70px;
-  background-color: #45255a;
-  position: absolute;
-  animation: drop forwards 0.8s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  top: -35px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .student-performance {
   font-size: 25px;
   color: purple;
@@ -193,19 +196,12 @@ body {
 }
 
 .box-container {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
   padding: 5px;
   margin-bottom: 20px;
 }
 
 .box {
-  display: flex;
-  flex-direction: column;
   align-items: left;
-  justify-content: flex-start;
   background-color: purple;
   padding: 10px;
   border-radius: 5%;
@@ -240,23 +236,16 @@ body {
 }
 
 .table-parent {
-  margin-top: 1rem;
   background-color: white;
   width: 50rem;
-  height: 25rem;
   border-radius: 5%;
   padding: 1rem;
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
-  flex-direction: column;
 }
 
 .table-row {
-  display: flex;
-  justify-content: center;
   align-items: top;
-  flex-direction: row;
+  display: flex;
   width: 100%;
 }
 
@@ -265,8 +254,6 @@ body {
   width: 8rem;
   height: 4rem;
   text-align: center;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -276,178 +263,14 @@ body {
   color: black;
 }
 
-.table-value-last {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .table-value-font {
   color: purple;
   font-size: 13px;
 }
 
-.ribbon:before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  left: -35px;
-  top: 0px;
-  bottom: 0;
-  border-bottom: 35px solid #45255a;
-  border-left: 35px solid transparent;
-  border-top: 35px solid #45255a;
-}
-
-.ribbon:after {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  right: -35px;
-  top: 0px;
-  bottom: 0;
-  border-bottom: 35px solid #45255a;
-  border-right: 35px solid transparent;
-  border-top: 35px solid #45255a;
-}
-
-/* Result Section */
-
-.result-section {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.report {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  font-size: 15px;
-  width: calc(100% - 100px);
-  height: 80px;
-  background-color: #45255a;
-  position: relative;
-  animation: drop forwards 0.8s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  text-align: right;
-  flex: 1;
-  justify-content: flex-end;
-  padding: 0px 50px 0 100px;
-  box-sizing: border-box;
-}
-
-.report-right {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  font-size: 15px;
-  width: calc(100% - 100px);
-  height: 80px;
-  background-color: #45255a;
-  position: relative;
-  animation: drop forwards 0.8s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  padding: 0px 100px 0 40px;
-  box-sizing: border-box;
-}
-
-.report:before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-bottom: 100px solid #fff;
-  border-right: 100px solid transparent;
-  position: absolute;
-  top: 0px;
-  left: -1px;
-}
-
-.report-right:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-right: 100px solid #fff;
-  border-top: 100px solid transparent;
-  position: absolute;
-  top: -1px;
-  right: -1px;
-}
-
-.circle {
-  font-family: "DejaVuSans-bold";
-  min-width: 110px;
-  height: 110px;
-  border-radius: 100%;
-  background-color: #e97e24;
-  position: relative;
-  z-index: 2;
-  left: -35px;
-  color: white;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-}
-
-/* report-section */
-.report-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 2%;
-  box-shadow: 0px 0px 10px 5px #5b235e;
-  padding: 2.2em;
-  position: relative;
-  margin-top: 30px;
-  width: 80%;
-}
-
-.right-circle {
-  left: 25px;
-}
-
-.down-report {
-  margin-top: 10px;
-}
-
-.empty-span {
-  width: 75px;
-}
-
-.marks-section {
-  display: flex;
-  font-family: "NotoSans";
-  width: 100%;
-}
-
-.marks-sub-section {
-  width: 50%;
-}
-
-.student-name {
-  font-size: 1.5em;
-}
-
-.pdf-title {
-  font-family: "DejaVuSans-bold";
-  font-size: 30px;
-  color: white;
-  margin: 10px;
-}
-
 .first-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   background: #833187;
-}
-
-.bnat-logo {
-  height: 80px;
-  width: 280px;
 }
 
 .badge-message {
@@ -455,136 +278,70 @@ body {
   font-size: 1em;
   width: 100%;
   height: 50px;
-  display: flex;
-  justify-content: center;
   align-items: center;
   color: white;
-}
-
-.address-line {
-  font-size: 12px;
-  font-family: "DejaVuSans-bold";
-}
-
-.side-heading {
-  font-family: "DejaVuSans-bold";
-  font-size: 12.5px;
-  font-weight: bold;
-  color: #a9a9a9;
-}
-
-.side-values {
-  font-family: "DejaVuSans-bold";
-  font-size: 10.5px;
-  color: purple;
-}
-
-.class-details {
-  font-family: "DejaVuSans-bold";
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-.air-header {
-  font-family: "DejaVuSans-bold";
-  font-size: 18px;
-}
-
-.air-value {
-  font-family: "DejaVuSans-bold";
-  font-size: 15px;
-  color: purple;
-}
-
-.air-container {
-  margin-top: 25px;
 }
 
 ul li::before {
   width: 1em2;
 }
 
-.page-header {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .section-circle {
   margin-bottom: 300px;
 }
 
-.circle-1 {
+.learning-circle {
   height: 160px;
   width: 160px;
-  background-color: #ffdafe;
   border-radius: 50%;
-  margin: -10px 40px 20px 300px;
   display: inline-block;
   position: absolute;
+}
+
+.circle-1 {
+  background-color: #ffdafe;
+  margin: -10px 40px 20px 300px;
 }
 
 .circle-2 {
-  height: 160px;
-  width: 160px;
   background-color: #98afc7;
-  border-radius: 50%;
   margin: 105px 40px 20px 200px;
-  display: inline-block;
-  position: absolute;
 }
 
 .circle-3 {
-  height: 160px;
-  width: 160px;
   background-color: #81d8d0;
-  border-radius: 50%;
   margin: 105px 40px 20px 400px;
-  display: inline-block;
-  position: absolute;
 }
 
 .circle-4 {
-  height: 160px;
-  width: 160px;
   background-color: #98afc7;
-  border-radius: 50%;
   margin: -10px 40px 20px 500px;
-  display: inline-block;
-  position: absolute;
 }
 
-.inner-1 {
+.learning-inner {
   font-size: 22px;
   font-family: "DejaVuSans";
   position: absolute;
+  text-align: center;
+}
+
+.inner-1 {
   top: 40%;
   left: 30px;
-  text-align: center;
   line-height: 0px;
 }
 
 .inner-2 {
-  font-size: 22px;
-  font-family: "DejaVuSans";
-  position: relative;
   top: 55%;
   left: 60px;
-  text-align: center;
   line-height: 10px;
 }
 
-.remarks-1 {
+.bold-font {
   font-family: "DejaVuSans-bold";
-  color: #ff0000e8;
   font-weight: bold;
 }
 
-.remarks-2 {
-  font-family: "DejaVuSans-bold";
-  color: #ffc400;
-  font-weight: bold;
-}
 .Focus {
   font-family: "DejaVuSans-bold";
   color: #ff0000e8;
@@ -592,15 +349,11 @@ ul li::before {
 }
 
 .Good {
-  font-family: "DejaVuSans-bold";
   color: #ffc400;
-  font-weight: bold;
 }
 
 .Excellent {
-  font-family: "DejaVuSans-bold";
   color: #09ff00;
-  font-weight: bold;
 }
 
 .learning-tips {
@@ -609,18 +362,12 @@ ul li::before {
 }
 
 .thanks-message {
-  font-family: "DejaVuSans-bold";
-  font-weight: bold;
   position: relative;
   left: 40px;
 }
 .circle-box-container {
   width: 100%;
   height: 332px;
-  display: flex;
-  /* justify-content: space-between; */
-  justify-content: space-evenly;
-  align-items: center;
 }
 .circle-text {
   font-size: 24px;
@@ -629,28 +376,17 @@ ul li::before {
 .percentile-box {
   width: 45%;
   height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column !important;
 }
 .percentile-container {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .percentile {
-  display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  align-items: center;
   padding: 15px 80px 10px 80px;
   border-radius: 10px;
 }
 .you-percentile {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-around !important;
   flex-direction: column;
 }

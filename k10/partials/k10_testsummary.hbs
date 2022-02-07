@@ -55,74 +55,19 @@
               <div class="table-section table-section-font justifyCenter">Total Time Taken</div>
               <div class="table-section table-section-font justifyCenter">Average Time / Ques</div>
             </div>
-            <div class="table-row justifyCenter">
-              <div class="table-section table-section-font justifyCenter">Overall Analysis</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">38 out of 60</div>
-              <div class="table-section table-value-font">23 mins, 35 secs</div>
-              <div class="table-section table-value-last justifyColumnCenter">
-                <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
-                <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
-              </div>
-            </div>
-            <div class="table-row justifyCenter">
-              <div class="table-section table-section-font justifyCenter">Physics</div>
-              <div class="table-section table-value-font justifyCenter">38 out of 60</div>
-              <div class="table-section table-value-font justifyCenter">38 out of 60</div>
-              <div class="table-section table-value-font justifyCenter">38 out of 60</div>
-              <div class="table-section table-value-font justifyCenter">23 mins, 35 secs</div>
-              <div class="table-section table-value-last justifyColumnCenter">
-                <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
-                <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
-              </div>
-            </div>
-            <div class="table-row justifyCenter">
-              <div class="table-section table-section-font justifyCenter">Chemistry</div>
-              <div class="table-section table-value-font justifyCenter">38 out of 60</div>
-              <div class="table-section table-value-font justifyCenter">38 out of 60</div>
-              <div class="table-section table-value-font justifyCenter">38 out of 60</div>
-              <div class="table-section table-value-font justifyCenter">23 mins, 35 secs</div>
-              <div class="table-section table-value-last justifyColumnCenter">
-                <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
-                <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
-              </div>
-            </div>
-            <div class="table-row justifyCenter">
-              <div class="table-section table-section-font justifyCenter">Mathematics</div>
-              <div class="table-section table-value-font justifyCenter">38 out of 60</div>
-              <div class="table-section table-value-font justifyCenter">38 out of 60</div>
-              <div class="table-section table-value-font justifyCenter">38 out of 60</div>
-              <div class="table-section table-value-font justifyCenter">23 mins, 35 secs</div>
-              <div class="table-section table-value-last justifyColumnCenter">
-                <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
-                <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
-              </div>
-            </div>
-            <div class="table-row justifyCenter">
-              <div class="table-section table-section-font justifyCenter">Biology</div>
-              <div class="table-section table-value-font justifyCenter">38 out of 60</div>
-              <div class="table-section table-value-font justifyCenter">38 out of 60</div>
-              <div class="table-section table-value-font justifyCenter">38 out of 60</div>
-              <div class="table-section table-value-font justifyCenter">23 mins, 35 secs</div>
-              <div class="table-section table-value-last justifyColumnCenter">
-                <div style="font-size: 13px; color:purple; margin-bottom: 2px;">57 secs</div>
-                <div style="font-size: 11px; color:purple; ">55.3% students were faster</div>
-              </div>
-            </div>
-            {{#each subjetArray}}
+            {{#each subjects}}
             <div class="table-row justifyCenter">
               <div class="table-section table-section-font justifyCenter">{{this.name}}</div>
-              <div class="table-section table-value-font justifyCenter">{{this.data.attempted}} out of {{this.data.max_questions}}</div>
-              <div class="table-section table-value-font justifyCenter">{{this.data.correct}} out of {{this.data.max_questions}}</div>
-              <div class="table-section table-value-font justifyCenter">{{this.data.incorrect}} out of {{this.data.max_questions}}</div>
-              <div class="table-section table-value-font justifyCenter">{{this.data.total_time_taken}}</div>
+              <div class="table-section table-section-font justifyCenter">{{this.attempted}}</div>
+              <div class="table-section table-value-font justifyCenter">{{this.correct}} </div>
+              <div class="table-section table-value-font justifyCenter">{{this.incorrect}}</div>
+              <div class="table-section table-value-font justifyCenter">{{this.totalTime}}</div>
               <div class="table-section table-value-last justfyColumnCenter">
-                <div style="font-size: 13px; color:purple; margin-bottom: 2px;">{{this.data.average_time_question}}</div>
-                <div style="font-size: 11px; color:purple; ">{{this.data.percentage_faster}}% students were faster</div>
+                <div style="font-size: 13px; color:purple; margin-bottom: 2px;">{{this.avgTime}}</div>
+                <div style="font-size: 11px; color:purple; ">{{this.percentage_faster}}</div>
               </div>
             </div>
-          {{/each}}
+            {{/each}}
           </div>
         </div>
     </div>
