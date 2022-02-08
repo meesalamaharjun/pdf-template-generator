@@ -12,17 +12,17 @@
           <div class="box flexColumn justifyStart">
             <div class="box-header">Questions Attempted</div>
             <div class="box-mid"></div>
-            <div class="box-footer">38 out of 60</div>
+            <div class="box-footer">{{overall_analytics.attempted}} out of {{overall_analytics.max_questions}}</div>
           </div>
           <div class="box flexColumn justifyStart">
             <div style="width: 50%;" class="box-header">Total Score</div>
             <div class="box-mid"></div>
-            <div class="box-footer">82</div>
+            <div class="box-footer">{{overall_analytics.total_score}}</div>
           </div>
           <div class="box flexColumn justifyStart">
             <div class="box-header">Percentage Score</div>
             <div class="box-mid"></div>
-            <div class="box-footer">34%</div>
+            <div class="box-footer">{{overall_analytics.overall_percentage}}%</div>
           </div>
 
         </div>
@@ -30,16 +30,16 @@
           <div class="box flexColumn justifyStart">
             <div class="box-header">All India Percentile</div>
             <div class="box-mid"></div>
-            <div class="box-footer">80.5</div>
+            <div class="box-footer">{{overall_analytics.overall_percentile}}</div>
           </div>
           <div class="box flexColumn justifyStart">
             <div style="width: 80%;" class="box-header">Average Time / Ques</div>
             <div class="box-mid"></div>
-            <div class="box-footer">37 secs</div>
+            <div class="box-footer">{{overall_analytics.average_time_question}}</div>
           </div>
         </div>
         <div class="student-performance">
-          19.2%
+          {{overall_analytics.percentage_better}}%
           students did
           better
         </div>

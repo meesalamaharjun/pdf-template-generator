@@ -8,35 +8,39 @@
       </span> 
       
     </div>
-    <div class="student-name-container justifyCenter">KUSUM</div>
+    <div class="student-name-container justifyCenter">{{full_name}}</div>
     <div class="assessment-container justifyCenter">
-      Assessment Date: <span class="assessment-value">January 09, 2022</span>
+      Assessment Date: <span class="assessment-value">{{dateFormat assessment_date}}</span>
     </div>
     <div class="assessment-container justifyCenter">
-      Enrollment No: <span class="assessment-value">9315845651</span>
+      Enrollment No: <span class="assessment-value">{{enrolment_no}}</span>
     </div>
     <div class="circle-box-container justifyEven">
       <div class="circle-percentage-container justifyColumnCenter">
       <div class="circle-percentage justifyCenter">
-        46%
+        {{overall_analytics.overall_percentage}}%
       </div>
       <p class="circle-text" style="margin-bottom: 0;">You Have</p>
       <p class="circle-text" style="margin-top: 0;">Scored</p>
     </div>
     <div class="justifyEven percentile-box">
       <div class="percentile-container justifyBetween">
-        <div class="percentile justifyBetween" style="background-color: rgb(136, 136, 233);"><p style="font-size: 30px; color: white; margin: 0;">56.8</p><p style="font-size: 10px; color: white;">PERCENTILE</p></div>
+        <div class="percentile justifyBetween" style="background-color: rgb(136, 136, 233);"><p style="font-size: 30px; color: white; margin: 0;">{{overall_analytics.overall_percentile}}</p><p style="font-size: 10px; color: white;">PERCENTILE</p></div>
         <div style="width: 176px;font-size: 20px;">Your All India Percentile</div>
       </div>
       <div class="percentile-container justifyBetween">
-        <div class="percentile justifyBetween" style="background-color: rgb(25, 175, 212);"><p style="font-size: 30px; color: white; margin: 0;">56.8</p><p style="font-size: 10px; color: white;">PERCENTILE</p></div>
+        <div class="percentile justifyBetween" style="background-color: rgb(25, 175, 212);">
+          <p style="font-size: 30px; color: white; margin: 0;">{{state_percentile}}</p>
+          <p style="font-size: 10px; color: white;">PERCENTILE</p></div>
         <div class="you-percentile justifyBetween><p style="margin-bottom: 0;font-size: 19px;">Your State Percentile</p>
-        <p style="color: grey;font-size: 18px;">(Uttar Pradesh)</p></div>
+        <p style="color: grey;font-size: 18px;">({{state}})</p></div>
       </div>
       <div class="percentile-container justifyBetween">
-        <div class="percentile justifyBetween" style="background-color: rgb(47, 92, 240);"><p style="font-size: 30px; color: white; margin: 0;">56.8</p><p style="font-size: 10px; color: white;">PERCENTILE</p></div>
+        <div class="percentile justifyBetween" style="background-color: rgb(47, 92, 240);">
+          <p style="font-size: 30px; color: white; margin: 0;">{{city_percentile}}</p>
+          <p style="font-size: 10px; color: white;">PERCENTILE</p></div>
         <div class="you-percentile justifyBetween"><p style="margin-bottom: 0;font-size: 19px;">Your City Percentile</p>
-        <p style="color: grey;font-size: 18px;">(Gaziabad)</p></div>
+        <p style="color: grey;font-size: 18px;">({{city}})</p></div>
       </div>
     </div>
     </div>
